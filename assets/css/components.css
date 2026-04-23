@@ -461,7 +461,7 @@
 
   /* Heading */
   .experiences-heading {
-    @apply max-w-[550px] flex flex-col gap-5;
+    @apply max-w-[650px] flex flex-col gap-5;
   }
 
   .experiences-heading h2 {
@@ -469,7 +469,7 @@
     tracking-[0%] leading-[120%] font-normal;
   }
   .experiences-heading p {
-    @apply text-white opacity-80 text-[14px] lg:text-[17px] tracking-[0%] leading-[130%];
+    @apply text-white opacity-[80%] text-[14px] lg:text-[17px] tracking-[0%] leading-[130%];
   }
 
   .experiences-btn {
