@@ -12,316 +12,619 @@
         href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=General+Sans:wght@300;400;500;600&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="./dist/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
     <main>
-<div class="nav-overlay" id="navOverlay" aria-hidden="true">
-    <div class="nav-panel">
+        <div class="nav-overlay" id="navOverlay" aria-hidden="true">
+            <div class="nav-panel">
 
-        <div class="nav-close-wrap">
-            <button class="nav-close-btn" id="navClose" aria-label="Close menu">
-         <img src="./assets/images/close.png" alt="close-btn">
-            </button>
+                <div class="nav-close-wrap">
+                    <button class="nav-close-btn" id="navClose" aria-label="Close menu">
+                        <img src="./assets/images/close.png" alt="close-btn">
+                    </button>
+                </div>
+
+                <div class="nav-panel-inner">
+                    <div class="nav-links-col">
+                        <nav class="nav-primary">
+                            <ul class="nav-menu">
+                                <li class="has-dropdown">
+                                    <div class="nav-item">
+                                        <a href="#destinations">Destinations</a>
+                                        <button class="dropdown-toggle">
+                                            <img src="./assets/images/dropdown.svg" alt="dropdown">
+                                        </button>
+                                    </div>
+
+                                    <ul class="dropdown">
+                                        <li><a href="#">Safari Tours</a></li>
+                                        <li><a href="#">Wildlife</a></li>
+                                        <li><a href="#">Luxury Camps</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-dropdown">
+                                    <div class="nav-item">
+                                        <a href="#journeys">Unforgettable Journeys</a>
+                                        <button class="dropdown-toggle">
+                                            <img src="./assets/images/dropdown.svg" alt="dropdown">
+                                        </button>
+                                    </div>
+
+                                    <ul class="dropdown">
+                                        <li><a href="#">Honeymoon</a></li>
+                                        <li><a href="#">Family Trips</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-dropdown">
+                                    <div class="nav-item">
+                                        <a href="#experiences">Experiences</a>
+                                        <button class="dropdown-toggle">
+                                            <img src="./assets/images/dropdown.svg" alt="dropdown">
+                                        </button>
+                                    </div>
+
+                                    <ul class="dropdown">
+                                        <li><a href="#">Helicopter Tours</a></li>
+                                        <li><a href="#">Private Safari</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-dropdown">
+                                    <div class="nav-item">
+                                        <a href="#travel-styles">Travel Styles</a>
+                                        <button class="dropdown-toggle">
+                                            <img src="./assets/images/dropdown.svg" alt="dropdown">
+                                        </button>
+                                    </div>
+
+                                    <ul class="dropdown">
+                                        <li><a href="#">Luxury</a></li>
+                                        <li><a href="#">Adventure</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Private Aviation Charter</a></li>
+                                <li><a href="#">About Us</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="nav-divider"></div>
+
+                        <nav class="nav-secondary">
+                            <ul>
+                                <li><a href="#why-us">Why Us</a></li>
+                                <li><a href="#safari-saves">Safari Saves</a></li>
+                                <li><a href="#journal">Our Journal</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="nav-images-col">
+                        <div class="nav-images-row">
+                            <div class="nav-img-wrap">
+                                <img src="./assets/images/Destination3.jpg" alt="Safari destination" />
+                            </div>
+                            <div class="nav-img-wrap">
+                                <img src="./assets/images/Destination4.jpg" alt="Coastal destination" />
+                            </div>
+                            <div class="nav-logo-wrap">
+                                <img src="./assets/images/sub-menu.svg" alt="Scapes" />
+                            </div>
+                        </div>
+
+                        <div class="nav-bottom-row">
+                            <div class="nav-enquire-wrap">
+                                <a href="#contact" class="nav-enquire-btn">Enquire</a>
+                            </div>
+                            <div class="nav-socials">
+                                <a href="#" aria-label="Instagram">
+                                    <img src="./assets/images/social3.png" alt="Instagram">
+                                </a>
+                                <a href="#" aria-label="X / Twitter">
+                                    <img src="./assets/images/social1.png" alt="Twitter">
+                                </a>
+                                <a href="#" aria-label="YouTube">
+                                    <img src="./assets/images/social2.png" alt="YouTube">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
-        <div class="nav-panel-inner">
-            <div class="nav-links-col">
-                <nav class="nav-primary">
-                    <ul>
-                        <li><a href="#destinations">Destinations 
-                            <button>
-                                <img src="./assets/images/dropdown.svg" alt="dropdown">
+        <section class="hero-section" id="hero">
+            <div class="hero-bg">
+                <img src="./assets/images/Hero.jpg" alt="African safari landscape at golden hour" />
+                <div class="hero-bg-overlay"></div>
+            </div>
+            <header class="hero-header">
+                <div class="hero-header-inner">
+                    <div class="hero-hamburger-wrap">
+                        <button class="hero-hamburger" id="navOpen" aria-label="Open menu">
+                            <img src="./assets/images/menu.svg" alt="menu">
+                        </button>
+                    </div>
+                    <div class="hero-logo-wrap">
+                        <a href="#">
+                            <img src="./assets/images/nav-logo.svg" alt="Scapes" />
+                        </a>
+                    </div>
+                    <div class="hero-enquire-wrap">
+                        <a href="#contact" class="hero-enquire-btn">Enquire</a>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- Hero content -->
+            <div class="hero-content">
+                <div class="hero-heading-wrap">
+                    <h1>Unlock Africa</h1>
+                </div>
+                <div class="hero-sub-wrap">
+                    <p>Luxury African &amp; Tailor-made Holidays</p>
+                </div>
+            </div>
+        </section>
+        <!-- WHY SCAPES SECTION -->
+        <section class="why-scapes-section fade-section">
+            <div class="why-strip" id="whyStrip">
+                <div class="why-strip-inner">
+                    <p>NEED HELP PLANNING YOUR NEXT TRIP?</p>
+                    <a href="#contact">GET IN TOUCH NOW</a>
+
+                    <button id="whyStripClose" aria-label="Close">
+                        ✕
+                    </button>
+                </div>
+            </div>
+            <div class="why-bg">
+                <img src="./assets/images/why-bg.png" alt="pattern background" />
+                <div class="why-overlay"></div>
+            </div>
+
+            <div class="why-content">
+                <h2>WHY SCAPES</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur. In fermentum orci iaculis elit maecenas at amet leo
+                    porttitor.
+                    Lorem ipsum dolor sit amet consectetur elit maecenas at.
+                </p>
+                <div class="why-features">
+
+                    <div class="why-item">
+                        <img src="./assets/images/Why1.svg" alt="">
+                        <span>PERSONALISED<br>EXPERIENCE</span>
+                    </div>
+
+                    <div class="why-item">
+                        <img src="./assets/images/Why2.svg" alt="">
+                        <span>PRIVATE<br>AIR CHARTERS</span>
+                    </div>
+
+                    <div class="why-item">
+                        <img src="./assets/images/Why3.svg" alt="">
+                        <span>OVER 10 AFRICAN<br>DESTINATIONS</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section> 
+        <!-- DESTINATIONS SECTION -->
+        <section class="destinations-section fade-section" id="destinations">
+            <div class="destinations-inner">
+
+                <div class="destinations-heading-wrap">
+                    <div class="destination-heading">
+                        <h2>Our Destinations</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. In fermentum orci iaculis elit maecenas at amet leo
+                            porttitor. Lorem ipsum dolor sit amet consectetur elit maecenas at.</p>
+                    </div>
+                    <button class="destinations-cta-btn">Discover Destinations</button>
+                </div>
+
+                <div class="destinations-swiper-clip">
+                    <div class="destinations-swiper-wrap">
+                        <div class="desktop-nav">
+                            <button class="dest-btn-prev" id="destPrev" aria-label="Previous">
+                                <img src="./assets/images/left-btn.svg" alt="previous" />
                             </button>
-                        </a></li>
-                        <li><a href="#journeys">Unforgettable Journeys <button>
-                            <img src="./assets/images/dropdown.svg" alt="dropdown">
-                        </button></a></li>
-                        <li><a href="#experiences">Experiences <button>
-                            <img src="./assets/images/dropdown.svg" alt="dropdown">
-                        </button></a></li>
-                        <li><a href="#travel-styles">Travel Styles<button>
-                            <img src="./assets/images/dropdown.svg" alt="dropdown">
-                        </button></a></li>
-                        <li><a href="#private-aviation">Private Aviation Charter</a></li>
-                        <li><a href="#about">About Us</a></li>
-                    </ul>
-                </nav>
+                            <button class="dest-btn-next" id="destNext" aria-label="Next">
+                                <img src="./assets/images/right-btn.png" alt="next" />
+                            </button>
+                        </div>
+                        <div class="swiper destinations-swiper" id="destinationsSwiper">
+                            <div class="swiper-wrapper">
 
-                <div class="nav-divider"></div>
+                                <div class="swiper-slide">
+                                    <div class="dest-slide">
+                                        <img class="dest-slide-img" src="./assets/images/Destination1.png"
+                                            alt="Botswana" />
+                                        <div class="dest-slide-overlay"></div>
+                                        <div class="dest-slide-name">Botswana</div>
+                                        <button class="dest-info-btn" data-target="highlights-1"
+                                            aria-label="Show highlights">
+                                            <img src="./assets/images/detail-icon.png" alt="info" />
+                                        </button>
+                                        <div class="dest-highlights" id="highlights-1">
+                                            <div class="dest-highlights-header">
+                                                <button class="dest-close-btn" data-close="highlights-1"
+                                                    aria-label="Close">−</button>
+                                                <span class="dest-highlights-label">Highlights:</span>
+                                            </div>
+                                             <div class="dest-highlights-tags">
+                                                <span class="dest-highlights-tag">Okavango Delta</span>
+                                                <span class="dest-highlights-tag">Chobe NP</span>
+                                                <span class="dest-highlights-tag">Big 5</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                <nav class="nav-secondary">
-                    <ul>
-                        <li><a href="#why-us">Why Us</a></li>
-                        <li><a href="#safari-saves">Safari Saves</a></li>
-                        <li><a href="#journal">Our Journal</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
+                                <div class="swiper-slide">
+                                    <div class="dest-slide">
+                                        <img class="dest-slide-img" src="./assets/images/Destination2.png"
+                                            alt="Kenya" />
+                                        <div class="dest-slide-overlay"></div>
+                                        <div class="dest-slide-name">Botswana</div>
+                                        <button class="dest-info-btn" data-target="highlights-2"
+                                            aria-label="Show highlights">
+                                            <img src="./assets/images/detail-icon.png" alt="info" />
+                                        </button>
+                                        <div class="dest-highlights" id="highlights-2">
+                                            <div class="dest-highlights-header">
+                                                <button class="dest-close-btn" data-close="highlights-2"
+                                                    aria-label="Close">−</button>
+                                                <span class="dest-highlights-label">Highlights:</span>
+                                            </div>
+                                            <div class="dest-highlights-tags">
+                                                <span class="dest-highlights-tag">Mount Kenyan</span>
+                                                <span class="dest-highlights-tag">Maasai Mara</span>
+                                                <span class="dest-highlights-tag">Big 6</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-            <div class="nav-images-col">
-                <div class="nav-images-row">
-                    <div class="nav-img-wrap">
-                        <img src="./assets/images/Destination3.jpg" alt="Safari destination" />
-                    </div>
-                    <div class="nav-img-wrap">
-                        <img src="./assets/images/Destination4.jpg" alt="Coastal destination" />
-                    </div>
-                    <div class="nav-logo-wrap">
-                        <img src="./assets/images/sub-menu.svg" alt="Scapes" />
+                                <div class="swiper-slide">
+                                    <div class="dest-slide">
+                                        <img class="dest-slide-img" src="./assets/images/Destination3.jpg"
+                                            alt="Mozambique" />
+                                        <div class="dest-slide-overlay"></div>
+                                        <div class="dest-slide-name">kenya</div>
+                                        <button class="dest-info-btn" data-target="highlights-3"
+                                            aria-label="Show highlights">
+                                            <img src="./assets/images/detail-icon.png" alt="info" />
+                                        </button>
+                                        <div class="dest-highlights" id="highlights-3">
+                                            <div class="dest-highlights-header">
+                                                <button class="dest-close-btn" data-close="highlights-3"
+                                                    aria-label="Close">−</button>
+                                                <span class="dest-highlights-label">Highlights:</span>
+                                            </div>
+                                             <div class="dest-highlights-tags">
+                                                <span class="dest-highlights-tag">Bazaruto Arch.</span>
+                                                <span class="dest-highlights-tag">Coral Reefs</span>
+                                                <span class="dest-highlights-tag">Whale Sharks</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="dest-slide">
+                                        <img class="dest-slide-img" src="./assets/images/Destination4.jpg"
+                                            alt="Tanzania" />
+                                        <div class="dest-slide-overlay"></div>
+                                        <div class="dest-slide-name">mozambique</div>
+                                        <button class="dest-info-btn" data-target="highlights-4"
+                                            aria-label="Show highlights">
+                                            <img src="./assets/images/detail-icon.png" alt="info" />
+                                        </button>
+                                        <div class="dest-highlights" id="highlights-4">
+                                            <div class="dest-highlights-header">
+                                                <button class="dest-close-btn" data-close="highlights-4"
+                                                    aria-label="Close">−</button>
+                                                <span class="dest-highlights-label">Highlights:</span>
+                                            </div>
+                                            <div class="dest-highlights-tags">
+                                                <span class="dest-highlights-tag">Serengeti</span>
+                                                <span class="dest-highlights-tag">Ngorongoro</span>
+                                                <span class="dest-highlights-tag">Zanzibar</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="dest-slide">
+                                        <img class="dest-slide-img" src="./assets/images/Experiences2.jpg"
+                                            alt="Rwanda" />
+                                        <div class="dest-slide-overlay"></div>
+                                        <div class="dest-slide-name">Rwanda</div>
+                                        <button class="dest-info-btn" data-target="highlights-5"
+                                            aria-label="Show highlights">
+                                            <img src="./assets/images/detail-icon.png" alt="info" />
+                                        </button>
+                                        <div class="dest-highlights" id="highlights-5">
+                                            <div class="dest-highlights-header">
+                                                <button class="dest-close-btn" data-close="highlights-5"
+                                                    aria-label="Close">−</button>
+                                                <span class="dest-highlights-label">Highlights:</span>
+                                            </div>
+                                            <div class="dest-highlights-tags">
+                                                <span class="dest-highlights-tag">Gorilla Trekking</span>
+                                                <span class="dest-highlights-tag">Volcanoes NP</span>
+                                                <span class="dest-highlights-tag">Lake Kivu</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
+                <div class="dest-nav-bottom">
+                    <button class="dest-btn-prev" aria-label="Previous destination" id="destPrev">
+                        <img src="./assets/images/left-btn.svg" alt="previous" />
+                    </button>
+                    <button class="dest-btn-next" aria-label="Next destination" id="destNext">
+                        <img src="./assets/images/right-btn.png" alt="next" />
+                    </button>
 
-                <div class="nav-bottom-row">
-                    <div class="nav-enquire-wrap">
-                        <a href="#contact" class="nav-enquire-btn">Enquire</a>
+                </div>
+
+            </div>
+        </section> 
+        <!-- UNFORGETTABLE JOURNEYS SECTION-->
+      <div class="bg-combined">
+            <section class="journeys-section fade-section" id="journeys">
+                <div class="journeys-inner">
+  <div class="journeys-card-wrap">
+                        <div class="journeys-card">
+                            <div class="journeys-card-img">
+                                <img src="./assets/images/Journey1.jpg"
+                                    alt="Guests gathered around a campfire on safari at sunset" />
+                            </div>
+                            <div class="journeys-stamp">
+                                <img src="./assets/images/jounery2.png" alt="" aria-hidden="true" />
+                            </div>
+                             <div class="journeys-caption">
+                                <p>Captured by Guide John Doe</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="nav-socials">
-                        <a href="#" aria-label="Instagram">
-                         <img src="./assets/images/social3.png" alt="Instagram">
-                        </a>
-                        <a href="#" aria-label="X / Twitter">
-                        <img src="./assets/images/social1.png" alt="Twitter">
-                        </a>
-                        <a href="#" aria-label="YouTube">
-                        <img src="./assets/images/social2.png" alt="YouTube">
-                        </a>
+
+                     <div class="journeys-content">
+   <div class="journeys-content-bg">
+                            <img src="./assets/images/jounery3.jpg" alt="" aria-hidden="true" />
+                        </div>
+                        <div class="jounery-wrap">
+                            <div class="journeys-heading-wrap">
+                                <h2>Unforgettable<br>Journeys</h2>
+                            </div>
+                            <div class="journeys-body-wrap">
+                                <p>Embark on an adventure of a lifetime with tailored itineraries that transform dreams
+                                    into reality,
+                                    perfect for any traveller.</p>
+                            </div>
+                            <div class="journeys-cta-wrap">
+                                <a href="#" class="journeys-cta-btn">View Itineraries</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+            <!-- ABOUT / HOW IT WORKS SECTION-->
+          <section class="about-section fade-section" id="about">
+                <div class="about-inner">
+   <div class="about-text-col">
 
-        </div>
-    </div>
-</div>
+                        <div class="about-headline-wrap">
+                            <p>Body text for your whole article or post. We'll put in some lorem ipsum to show how a
+                                filled-out page
+                                might look:</p>
+                        </div>
 
-<section class="hero-section" id="hero">
-    <div class="hero-bg">
-        <img src="./assets/images/Hero.jpg" alt="African safari landscape at golden hour" />
-        <div class="hero-bg-overlay"></div>
-    </div>
-    <header class="hero-header">
-        <div class="hero-header-inner">
-            <div class="hero-hamburger-wrap">
-                <button class="hero-hamburger" id="navOpen" aria-label="Open menu">
-               <img src="./assets/images/menu.svg" alt="menu">
-                </button>
-            </div>
-            <div class="hero-logo-wrap">
-                <a href="#">
-                    <img src="./assets/images/nav-logo.svg" alt="Scapes" />
-                </a>
-            </div>
-            <div class="hero-enquire-wrap">
-                <a href="#contact" class="hero-enquire-btn">Enquire</a>
-            </div>
+                        <div class="about-body-wrap">
+                            <p>Excepteur efficient emerging, minim veniam anim aute carefully curated Ginza conversation
+                                exquisite
+                                perfect nostrud nisi intricate Content. Qui international first-class nulla ut. Punctual
+                                adipiscing,
+                                essential lovely queen tempor eiusmod irure. Exclusive Izakaya charming Scandinavian
+                                impeccable aute
+                                quality of life soft power pariatur Melbourne occaecat discerning.</p>
+                        </div>
 
-        </div>
-    </header>
+                        <div class="about-link-wrap">
+                            <a href="#founders">Message from our Founders</a>
+                        </div>
 
-    <!-- Hero content -->
-    <div class="hero-content">
-        <div class="hero-heading-wrap">
-            <h1>Unlock Africa</h1>
-        </div>
-        <div class="hero-sub-wrap">
-            <p>Luxury African &amp; Tailor-made Holidays</p>
-        </div>
-    </div>
-</section>
-<!-- WHY SCAPES SECTION -->
- 
-<section class="why-scapes-section fade-section">
-<div class="why-strip" id="whyStrip">
-    <div class="why-strip-inner">
-        <p>NEED HELP PLANNING YOUR NEXT TRIP?</p>
-        <a href="#contact">GET IN TOUCH NOW</a>
+                        <div class="about-cta-wrap">
+                            <a href="#about-us" class="about-cta-btn">About Us</a>
+                        </div>
 
-        <button id="whyStripClose" aria-label="Close">
-            ✕
-        </button>
-    </div>
-</div>
-    <div class="why-bg">
-        <img src="./assets/images/scapes-bg.png" alt="pattern background" />
-        <div class="why-overlay"></div>
-    </div>
+                    </div>
+   <div class="about-img-col">
+                        <div class="about-img-wrap">
+                            <img src="./assets/images/message.png" alt="Hot air balloon safari experience at sunrise" />
+                        </div>
+                    </div>
 
-    <div class="why-content">
-        <h2>WHY SCAPES</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur. In fermentum orci iaculis elit maecenas at amet leo porttitor.
-            Lorem ipsum dolor sit amet consectetur elit maecenas at.
-        </p>
-        <div class="why-features">
-
-            <div class="why-item">
-                <img src="./assets/images/Why1.svg" alt="">
-                <span>PERSONALISED<br>EXPERIENCE</span>
-            </div>
-
-            <div class="why-item">
-                <img src="./assets/images/Why2.svg" alt="">
-                <span>PRIVATE<br>AIR CHARTERS</span>
-            </div>
-
-            <div class="why-item">
-                <img src="./assets/images/Why3.svg" alt="">
-                <span>OVER 10 AFRICAN<br>DESTINATIONS</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-    <!-- DESTINATIONS SECTION -->
-    <section class="destinations-section fade-section" id="destinations">
-        <div class="destinations-inner">
-
-            <div class="destinations-heading-wrap">
-                <div class="destination-heading">
-                    <h2>Our Destinations</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur. In fermentum orci iaculis elit maecenas at amet leo
-                        porttitor. Lorem ipsum dolor sit amet consectetur elit maecenas at.</p>
                 </div>
-                <button class="destinations-cta-btn">Discover Destinations</button>
+            </section>
+        </div>
+        <!-- HOW IT WORKS -->
+         <section class="how-section fade-section">
+
+            <div class="how-bg">
+                <img src="./assets/images/work-section.svg" alt="wrok-section">
+                <div class="how-overlay"></div>
+            </div>
+            <div class="how-inner">
+
+                <h2>HOW IT WORKS</h2>
+
+                <div class="how-steps">
+
+                    <div class="how-step">
+                        <div class="how-circle">1</div>
+                        <h3>TALK TO US</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. In fermentum orci iaculis elit maecenas at amet leo
+                            porttitor.
+                        </p>
+                    </div>
+                    <div class="how-step">
+                        <div class="how-circle">2</div>
+                        <h3>WE CURATE YOUR EXPERIENCE</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. In fermentum orci iaculis elit maecenas at amet leo
+                            porttitor.
+                        </p>
+                    </div>
+                    <div class="how-step">
+                        <div class="how-circle">3</div>
+                        <h3>START PACKING & ENJOY</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur. In fermentum orci iaculis elit maecenas at amet leo
+                            porttitor.
+                        </p>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="destinations-swiper-clip">
-                <div class="destinations-swiper-wrap">
-                    <div class="desktop-nav">
-    <button class="dest-btn-prev" id="destPrev" aria-label="Previous">
-        <img src="./assets/images/left-btn.svg" alt="previous" />
-    </button>
-    <button class="dest-btn-next" id="destNext" aria-label="Next">
-        <img src="./assets/images/right-btn.png" alt="next" />
-    </button>
-    </div>               <div class="swiper destinations-swiper" id="destinationsSwiper">
+        </section>
+        <div class="bg-combined">
+        <!-- TRAVEL STYLES SECTION -->
+         <section class="travel-section fade-section" id="travel-styles">
+ <div class="travel-heading-wrap">
+                <h2>Travel Styles</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. In fermentum orci iaculis elit maecenas at amet leo
+                    porttitor. Lorem
+                    ipsum dolor sit amet consectetur elit maecenas at.</p>
+            </div>
+   <div class="travel-swiper-clip">
+                <div class="travel-swiper-wrap">
+      <button class="travel-btn-prev" id="travelPrev" aria-label="Previous">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+
+                    <div class="swiper travel-swiper" id="travelSwiper">
                         <div class="swiper-wrapper">
-
-                            <div class="swiper-slide">
-                                <div class="dest-slide">
-                                    <img class="dest-slide-img" src="./assets/images/Destination1.png" alt="Botswana" />
-                                    <div class="dest-slide-overlay"></div>
-                                    <div class="dest-slide-name">Botswana</div>
-                                    <button class="dest-info-btn" data-target="highlights-1"
-                                        aria-label="Show highlights">
-                                        <img src="./assets/images/detail-icon.png" alt="info" />
-                                    </button>
-                                    <div class="dest-highlights" id="highlights-1">
-                                        <div class="dest-highlights-header">
-                                            <button class="dest-close-btn" data-close="highlights-1"
-                                                aria-label="Close">−</button>
-                                            <span class="dest-highlights-label">Highlights:</span>
+<div class="swiper-slide">
+                                <div class="travel-card">
+                                    <img class="travel-card-img" src="./assets/images/Travel1.jpg" alt="Romance" />
+                                    <div class="travel-card-overlay"></div>
+                                    <div class="travel-card-content">
+                                        <div class="travel-card-title">
+                                            <h3>Romance</h3>
                                         </div>
-                                        <div class="dest-highlights-divider"></div>
-                                        <div class="dest-highlights-tags">
-                                            <span class="dest-highlights-tag">Okavango Delta</span>
-                                            <span class="dest-highlights-tag">Chobe NP</span>
-                                            <span class="dest-highlights-tag">Big 5</span>
+                                        <div class="travel-card-sub">
+                                            <p>Love's Adventure Under African Skies</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="swiper-slide">
-                                <div class="dest-slide">
-                                    <img class="dest-slide-img" src="./assets/images/Destination2.png" alt="Kenya" />
-                                    <div class="dest-slide-overlay"></div>
-                                    <div class="dest-slide-name">Botswana</div>
-                                    <button class="dest-info-btn" data-target="highlights-2"
-                                        aria-label="Show highlights">
-                                        <img src="./assets/images/detail-icon.png" alt="info" />
-                                    </button>
-                                    <div class="dest-highlights" id="highlights-2">
-                                        <div class="dest-highlights-header">
-                                            <button class="dest-close-btn" data-close="highlights-2"
-                                                aria-label="Close">−</button>
-                                            <span class="dest-highlights-label">Highlights:</span>
+   <div class="swiper-slide">
+                                <div class="travel-card">
+                                    <img class="travel-card-img" src="./assets/images/Travel2.jpg" alt="Family" />
+                                    <div class="travel-card-overlay"></div>
+                                    <div class="travel-card-content">
+                                        <div class="travel-card-title">
+                                            <h3>Family</h3>
                                         </div>
-                                        <div class="dest-highlights-divider"></div>
-                                        <div class="dest-highlights-tags">
-                                            <span class="dest-highlights-tag">Mount Kenyan</span>
-                                            <span class="dest-highlights-tag">Maasai Mara</span>
-                                            <span class="dest-highlights-tag">Big 6</span>
+                                        <div class="travel-card-sub">
+                                            <p>Memories Made Across the Savannah</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="swiper-slide">
-                                <div class="dest-slide">
-                                    <img class="dest-slide-img" src="./assets/images/Destination3.jpg"
-                                        alt="Mozambique" />
-                                    <div class="dest-slide-overlay"></div>
-                                    <div class="dest-slide-name">kenya</div>
-                                    <button class="dest-info-btn" data-target="highlights-3"
-                                        aria-label="Show highlights">
-                                        <img src="./assets/images/detail-icon.png" alt="info" />
-                                    </button>
-                                    <div class="dest-highlights" id="highlights-3">
-                                        <div class="dest-highlights-header">
-                                            <button class="dest-close-btn" data-close="highlights-3"
-                                                aria-label="Close">−</button>
-                                            <span class="dest-highlights-label">Highlights:</span>
+  <div class="swiper-slide">
+                                <div class="travel-card">
+                                    <img class="travel-card-img" src="./assets/images/Accommodation.jpg"
+                                        alt="Romance" />
+                                    <div class="travel-card-overlay"></div>
+                                    <div class="travel-card-content">
+                                        <div class="travel-card-title">
+                                            <h3>Romance</h3>
                                         </div>
-                                        <div class="dest-highlights-divider"></div>
-                                        <div class="dest-highlights-tags">
-                                            <span class="dest-highlights-tag">Bazaruto Arch.</span>
-                                            <span class="dest-highlights-tag">Coral Reefs</span>
-                                            <span class="dest-highlights-tag">Whale Sharks</span>
+                                        <div class="travel-card-sub">
+                                            <p>Love's Adventure Under African Skies</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="swiper-slide">
-                                <div class="dest-slide">
-                                    <img class="dest-slide-img" src="./assets/images/Destination4.jpg" alt="Tanzania" />
-                                    <div class="dest-slide-overlay"></div>
-                                    <div class="dest-slide-name">mozambique</div>
-                                    <button class="dest-info-btn" data-target="highlights-4"
-                                        aria-label="Show highlights">
-                                        <img src="./assets/images/detail-icon.png" alt="info" />
-                                    </button>
-                                    <div class="dest-highlights" id="highlights-4">
-                                        <div class="dest-highlights-header">
-                                            <button class="dest-close-btn" data-close="highlights-4"
-                                                aria-label="Close">−</button>
-                                            <span class="dest-highlights-label">Highlights:</span>
+  <div class="swiper-slide">
+                                <div class="travel-card">
+                                    <img class="travel-card-img" src="./assets/images/Travel1.jpg" alt="Solo" />
+                                    <div class="travel-card-overlay"></div>
+                                    <div class="travel-card-content">
+                                        <div class="travel-card-title">
+                                            <h3>Solo</h3>
                                         </div>
-                                        <div class="dest-highlights-divider"></div>
-                                        <div class="dest-highlights-tags">
-                                            <span class="dest-highlights-tag">Serengeti</span>
-                                            <span class="dest-highlights-tag">Ngorongoro</span>
-                                            <span class="dest-highlights-tag">Zanzibar</span>
+                                        <div class="travel-card-sub">
+                                            <p>Your Journey, Your Rules, Your Africa</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="swiper-slide">
-                                <div class="dest-slide">
-                                    <img class="dest-slide-img" src="./assets/images/Experiences2.jpg" alt="Rwanda" />
-                                    <div class="dest-slide-overlay"></div>
-                                    <div class="dest-slide-name">Rwanda</div>
-                                    <button class="dest-info-btn" data-target="highlights-5"
-                                        aria-label="Show highlights">
-                                        <img src="./assets/images/detail-icon.png" alt="info" />
-                                    </button>
-                                    <div class="dest-highlights" id="highlights-5">
-                                        <div class="dest-highlights-header">
-                                            <button class="dest-close-btn" data-close="highlights-5"
-                                                aria-label="Close">−</button>
-                                            <span class="dest-highlights-label">Highlights:</span>
+<div class="swiper-slide">
+                                <div class="travel-card">
+                                    <img class="travel-card-img" src="./assets/images/Travel2.jpg" alt="Adventure" />
+                                    <div class="travel-card-overlay"></div>
+                                    <div class="travel-card-content">
+                                        <div class="travel-card-title">
+                                            <h3>Adventure</h3>
                                         </div>
-                                        <div class="dest-highlights-divider"></div>
-                                        <div class="dest-highlights-tags">
-                                            <span class="dest-highlights-tag">Gorilla Trekking</span>
-                                            <span class="dest-highlights-tag">Volcanoes NP</span>
-                                            <span class="dest-highlights-tag">Lake Kivu</span>
+                                        <div class="travel-card-sub">
+                                            <p>Untamed Wilderness, Unmatched Thrills</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+  <div class="swiper-slide">
+                                <div class="travel-card">
+                                    <img class="travel-card-img" src="./assets/images/Accommodation.jpg" alt="Luxury" />
+                                    <div class="travel-card-overlay"></div>
+                                    <div class="travel-card-content">
+                                        <div class="travel-card-title">
+                                            <h3>Luxury</h3>
+                                        </div>
+                                        <div class="travel-card-sub">
+                                            <p>Refined Comfort in the Heart of the Wild</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+ <div class="swiper-slide">
+                                <div class="travel-card">
+                                    <img class="travel-card-img" src="./assets/images/Travel2.jpg" alt="Wellness" />
+                                    <div class="travel-card-overlay"></div>
+                                    <div class="travel-card-content">
+                                        <div class="travel-card-title">
+                                            <h3>Wellness</h3>
+                                        </div>
+                                        <div class="travel-card-sub">
+                                            <p>Restore Your Soul Beneath Open Skies</p>
                                         </div>
                                     </div>
                                 </div>
@@ -329,301 +632,506 @@
 
                         </div>
                     </div>
-
-                  
+                    <button class="travel-btn-next" id="travelNext" aria-label="Next">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
 
                 </div>
-            </div><!-- /.destinations-swiper-clip -->
-<div class="dest-nav-bottom">
-<button class="dest-btn-prev" aria-label="Previous destination" id="destPrev">
-    <img src="./assets/images/left-btn.svg" alt="previous" />
-</button>
-<button class="dest-btn-next" aria-label="Next destination" id="destNext">
-    <img src="./assets/images/right-btn.png" alt="next" />
-</button>
+            </div>
+            <div class="travel-pagination" id="travelPagination"></div>
 
-</div>
-
-        </div>
-    </section>
-    <!-- HOW IT WORKS -->
-    <section class="how-section fade-section">
-    
-        <div class="how-bg">
-            <img src="./assets/images/work-section.svg" alt="wrok-section">
-            <div class="how-overlay"></div>
-        </div>
-        <div class="how-inner">
-    
-            <h2>HOW IT WORKS</h2>
-    
-            <div class="how-steps">
-    
-                <div class="how-step">
-                    <div class="how-circle">1</div>
-                    <h3>TALK TO US</h3>
+        </section>
+        <!-- EXPERIENCES SECTION -->
+     <section class="experiences-section fade-section" id="experiences">
+            <div class="experiences-inner">
+<div class="experiences-heading">
+                    <h2>Experiences</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur. In fermentum orci iaculis elit maecenas at amet leo
                         porttitor.
+                        Lorem ipsum dolor sit amet consectetur elit maecenas at.
                     </p>
-                </div>
-                <div class="how-step">
-                    <div class="how-circle">2</div>
-                    <h3>WE CURATE YOUR EXPERIENCE</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur. In fermentum orci iaculis elit maecenas at amet leo
-                        porttitor.
-                    </p>
-                </div>
-                <div class="how-step">
-                    <div class="how-circle">3</div>
-                    <h3>START PACKING & ENJOY</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur. In fermentum orci iaculis elit maecenas at amet leo
-                        porttitor.
-                    </p>
-                </div>
-    
-            </div>
-    
-        </div>
-    
-    </section>
-<!-- EXPERIENCES SECTION -->
-<section class="experiences-section fade-section" id="experiences">
-    <div class="experiences-inner">
 
-        <!-- Heading -->
-        <div class="experiences-heading">
-            <h2>Experiences</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur. In fermentum orci iaculis elit maecenas at amet leo porttitor.
-                Lorem ipsum dolor sit amet consectetur elit maecenas at.
-            </p>
-
-            <a href="#" class="experiences-btn">Explore All Experiences</a>
-        </div>
-
-        <!-- Cards -->
-        <div class="experiences-grid">
-
-            <!-- Card 1 -->
-            <div class="experience-card">
-                <div class="experience-img">
-                    <img src="./assets/images/Experiences1.jpg" alt="Private Flying" />
+                    <a href="#" class="experiences-btn">Explore All Experiences</a>
                 </div>
-                <div class="experience-content">
-                    <h3>Private Flying & Hosted Safaris</h3>
-                    <span>LOCATION, COUNTRY</span>
+  <div class="experiences-grid">
+   <div class="experience-card">
+                        <div class="experience-img">
+                            <img src="./assets/images/Experiences1.jpg" alt="Private Flying" />
+                        </div>
+                        <div class="experience-content">
+                            <h3>Private Flying & Hosted Safaris</h3>
+                            <span>LOCATION, COUNTRY</span>
+                        </div>
+                    </div>
+   <div class="experience-card">
+                        <div class="experience-img">
+                            <img src="./assets/images/Experiences2.jpg" alt="Helicopter" />
+                        </div>
+                        <div class="experience-content">
+                            <h3>Helicopter Over The Delta</h3>
+                            <span>LOCATION, COUNTRY</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-
-            <!-- Card 2 -->
-            <div class="experience-card">
-                <div class="experience-img">
-                    <img src="./assets/images/Experiences2.jpg" alt="Helicopter" />
+        </section>
+        </div>
+        <!-- ACCOMMODATION SECTION -->
+         <section class="accommodation-section fade-section" id="accommodation">
+            <div class="accommodation-img-wrap">
+                <img src="./assets/images/Accommodation.jpg" alt="Luxury outdoor accommodation" />
+                <div class="accommodation-overlay"></div>
+                <div class="accommodation-content">
+                    <h2 class="accommodation-heading">Accommodation</h2>
+                    <p class="accommodation-body">Lorem ipsum dolor sit amet consectetur. In fermentum orci iaculis elit
+                        maecenas at amet leo porttitor. Lorem ipsum dolor sit amet consectetur elit maecenas at. Lorem
+                        ipsum
+                        dolor sit amet consectetur. In fermentum orci iaculis elit maecenas at amet leo porttitor.</p>
                 </div>
-                <div class="experience-content">
-                    <h3>Helicopter Over The Delta</h3>
-                    <span>LOCATION, COUNTRY</span>
+
+            </div>
+        </section> 
+        <!-- FROM OUR TRAVELLERS SECTION -->
+         <section class="travellers-section fade-section" id="travellers">
+            <div class="travellers-bg">
+                <img src="./assets/images/scapes-bg.png" alt="Safari landscape background" />
+                <div class="travellers-bg-overlay"></div>
+            </div>
+            <div class="travellers-inner">
+                <div class="travellers-heading-wrap">
+                    <h2>From Our Travellers</h2>
+                </div>
+                <div class="travellers-grid">
+                    <div class="traveller-card">
+                        <div class="traveller-stars"><img src="./assets/images/Rating.png" alt="Rating"></div>
+                        <div class="traveller-quote">
+                            <p>Luxurious accommodations and breathtaking wildlife made it unforgettable. Highly
+                                recommend!
+                            </p>
+                        </div>
+                        <div class="traveller-author">
+                            <p>Brett Charles</p>
+                        </div>
+                    </div>
+                    <div class="traveller-card traveller-card--center">
+                        <div class="traveller-stars"><img src="./assets/images/Rating.png" alt="Rating"></div>
+                        <div class="traveller-quote">
+                            <p>Our African safari with SafariScapes was a dream come true! We cannot wait to do another
+                                trip.</p>
+                        </div>
+                        <div class="traveller-author">
+                            <p>Sarah Johnson</p>
+                        </div>
+                    </div>
+                    <div class="traveller-card">
+                        <div class="traveller-stars"><img src="./assets/images/Rating.png" alt="Rating"></div>
+                        <div class="traveller-quote">
+                            <p>A traveller's dream! They handled everything with care and all we had to do was relax and
+                                have fun!</p>
+                        </div>
+                        <div class="traveller-author">
+                            <p>Amber Hollands</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="travellers-nav">
+                <button class="dest-btn-prev" id="travPrev">
+                    <img src="./assets/images/left-btn.svg" alt="previous" />
+                </button>
+                <button class="dest-btn-next" id="travNext">
+                    <img src="./assets/images/right-btn.png" alt="next" />
+                </button>
+            </div>
+        </section>
+        <!-- VERTICAL JOURNEYS SWIPER SECTION -->
+         <div class="bg-combined">
+        <section class="vj-section fade-section" id="vj-section">
+
+            <div class="swiper vj-swiper" id="vjSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide vj-slide">
+
+                        <div class="journeys-inner">
+                            <div class="journeys-card-wrap">
+                                <div class="journeys-card">
+                                    <div class="journeys-card-img">
+                                        <img src="./assets/images/dream1.png"
+                                            alt="Guests gathered around a campfire on safari at sunset" />
+                                    </div>
+                                    <div class="journeys-stamp">
+                                        <img src="./assets/images/dream2.png" alt="" aria-hidden="true" />
+                                    </div>
+                                    <div class="journeys-caption">
+                                        <p>Captured by Guide John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dreams-content ">
+                                <div class="journeys-content-bg">
+                                    <img src="./assets/images/jounery3.jpg" alt="" aria-hidden="true" />
+                                </div>
+                                <div class="jounery-wrap">
+                                    <div class="dreams-heading-wrap">
+                                        <h2>Let Us Create Your Dream Adventure</h2>
+                                    </div>
+                                    <div class="dreams-body-wrap">
+                                        <p>Embark on an adventure of a lifetime with tailored itineraries that transform
+                                            dreams into reality,
+                                            perfect for any traveller.</p>
+                                    </div>
+                                    <div class="journeys-cta-wrap">
+                                        <a href="#" class="View-cta-btn">View Itineraries</a>
+                                        <a href="#" class="book-cta-btn">Book a call</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-slide vj-slide">
+                        <div class="journeys-inner">
+   <div class="journeys-card-wrap">
+                                <div class="journeys-card">
+                                    <div class="journeys-card-img">
+                                        <img src="./assets/images/dream1.png"
+                                            alt="Guests gathered around a campfire on safari at sunset" />
+                                    </div>
+                                    <div class="journeys-stamp">
+                                        <img src="./assets/images/dream2.png" alt="" aria-hidden="true" />
+                                    </div>
+                                     <div class="journeys-caption">
+                                        <p>Captured by Guide John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+ <div class="dreams-content ">
+     <div class="journeys-content-bg">
+                                    <img src="./assets/images/jounery3.jpg" alt="" aria-hidden="true" />
+                                </div>
+                                <div class="jounery-wrap">
+                                    <div class="dreams-heading-wrap">
+                                        <h2>Let Us Create Your Dream Adventure</h2>
+                                    </div>
+                                    <div class="dreams-body-wrap">
+                                        <p>Embark on an adventure of a lifetime with tailored itineraries that transform
+                                            dreams into reality,
+                                            perfect for any traveller.</p>
+                                    </div>
+                                    <div class="journeys-cta-wrap">
+                                        <a href="#" class="View-cta-btn">enquire now</a>
+                                        <a href="#" class="book-cta-btn">Book a call</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide vj-slide">
+                        <div class="journeys-inner">
+                            <div class="journeys-card-wrap">
+                                <div class="journeys-card">
+                                    <div class="journeys-card-img">
+                                        <img src="./assets/images/dream1.png"
+                                            alt="Guests gathered around a campfire on safari at sunset" />
+                                    </div>
+                                    <div class="dream-stamp">
+                                        <img src="./assets/images/dream2.png" alt="" aria-hidden="true" />
+                                    </div>
+                                     <div class="journeys-caption">
+                                        <p>Captured by Guide John Doe</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dreams-content">
+                                <div class="journeys-content-bg">
+                                    <img src="./assets/images/jounery3.jpg" alt="" aria-hidden="true" />
+                                </div>
+                                <div class="jounery-wrap">
+                                    <div class="dreams-heading-wrap">
+                                        <h2>Let Us Create Your Dream Adventure</h2>
+                                    </div>
+                                    <div class="dreams-body-wrap">
+                                        <p>Embark on an adventure of a lifetime with tailored itineraries that transform
+                                            dreams into reality,
+                                            perfect for any traveller.</p>
+                                    </div>
+                                    <div class="journeys-cta-wrap">
+                                        <a href="#" class="View-cta-btn">enquire now</a>
+                                        <a href="#" class="book-cta-btn">Book a call</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
+        </section> 
+<!--  STAY UP TO DATE SECTION-->
+<section class="stay-section fade-section" id="stay">
+    <div class="stay-inner">
+        <div class="stay-top">
+            <div class="stay-heading-wrap">
+                <h2>Stay Up To Date</h2>
+            </div>
+            <div class="stay-body-wrap">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+            </div>
         </div>
+        <div class="stay-form">
+            <div class="stay-field">
+                <input type="text" placeholder="NAME" class="stay-input" />
+                <div class="stay-input-line"></div>
+            </div>
+            <div class="stay-field">
+                <input type="text" placeholder="SURNAME" class="stay-input" />
+                <div class="stay-input-line"></div>
+            </div>
+            <div class="stay-field stay-field--email">
+                <input type="email" placeholder="EMAIL ADDRESS" class="stay-input" />
+                <div class="stay-input-line"></div>
+            </div>
+            <div class="stay-submit">
+                <button class="stay-btn">Subscribe</button>
+            </div>
+        </div>
+
     </div>
 </section>
-    <!-- ACCOMMODATION SECTION -->
-    <section class="accommodation-section fade-section" id="accommodation">
-        <div class="accommodation-img-wrap">
-            <img src="./assets/images/Accommodation.jpg" alt="Luxury outdoor accommodation" />
-            <div class="accommodation-overlay"></div>
-            <div class="accommodation-content">
-                <h2 class="accommodation-heading">Accommodation</h2>
-                <p class="accommodation-body">Lorem ipsum dolor sit amet consectetur. In fermentum orci iaculis elit
-                    maecenas at amet leo porttitor. Lorem ipsum dolor sit amet consectetur elit maecenas at. Lorem ipsum
-                    dolor sit amet consectetur. In fermentum orci iaculis elit maecenas at amet leo porttitor.</p>
-            </div>
+</div>  
+    </main>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="./assets/images/nav-logo.svg" alt="Scapes">
+                    </div>
+                    <div class="footer-contact">
+                        <p>817-480-4999</p>
+                        <p>info@scapes.com</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-menu1">
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Accommodations</a></li>
+                        <li><a href="#">Experiences</a></li>
+                        <li><a href="#">Unforgettable Journeys</a></li>
+                        <li><a href="#">Private Air Charter</a></li>
+                        <li><a href="#">Safari Saves</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-menu2">
+                        <li><a href="#">Travel Types</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Why Safariscapes</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Our Journal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-cta">
+                    <a href="#" class="footer-btn-primary">Enquire Now</a>
+                    <a href="#" class="footer-btn-secondary">Book a Call</a>
 
-        </div>
-    </section>
+                    <div class="footer-socials">
+                        <a href="#"><img src="./assets/images/social3.png" alt=""></a>
+                        <a href="#"><img src="./assets/images/social1.png" alt=""></a>
+                        <a href="#"><img src="./assets/images/social2.png" alt=""></a>
+                    </div>
+                </div>
 
-    <!-- FROM OUR TRAVELLERS SECTION -->
-    <section class="travellers-section fade-section" id="travellers">
-        <div class="travellers-bg">
-            <img src="./assets/images/scapes-bg.png" alt="Safari landscape background" />
-            <div class="travellers-bg-overlay"></div>
-        </div>
-        <div class="travellers-inner">
-            <div class="travellers-heading-wrap">
-                <h2>From Our Travellers</h2>
             </div>
-            <div class="travellers-grid">
-                <div class="traveller-card">
-                    <div class="traveller-stars"><img src="./assets/images/Rating.png" alt="Rating"></div>
-                    <div class="traveller-quote">
-                        <p>Luxurious accommodations and breathtaking wildlife made it unforgettable. Highly recommend!
-                        </p>
-                    </div>
-                    <div class="traveller-author">
-                        <p>Brett Charles</p>
-                    </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+             <a href="#" class="Accreditations">Accreditations & Partners</a>
+             <img src="./assets/images/footer-logo.png" alt="logo">
                 </div>
-                <div class="traveller-card traveller-card--center">
-                    <div class="traveller-stars"><img src="./assets/images/Rating.png" alt="Rating"></div>
-                    <div class="traveller-quote">
-                        <p>Our African safari with SafariScapes was a dream come true! We cannot wait to do another
-                            trip.</p>
-                    </div>
-                    <div class="traveller-author">
-                        <p>Sarah Johnson</p>
-                    </div>
-                </div>
-                <div class="traveller-card">
-                    <div class="traveller-stars"><img src="./assets/images/Rating.png" alt="Rating"></div>
-                    <div class="traveller-quote">
-                        <p>A traveller's dream! They handled everything with care and all we had to do was relax and
-                            have fun!</p>
-                    </div>
-                    <div class="traveller-author">
-                        <p>Amber Hollands</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-           <div class="travellers-nav">
-        <button class="dest-btn-prev" id="travPrev">
-            <img src="./assets/images/left-btn.svg" alt="previous" />
-        </button>
-        <button class="dest-btn-next" id="travNext">
-            <img src="./assets/images/right-btn.png" alt="next" />
-        </button>
-    </div>
-    </section>
-</main>
-<footer class="footer">
-    <div class="footer-inner">
-        <div class="footer-top">
-            <div class="footer-brand">
-                <div class="footer-logo">
-                    <img src="./assets/images/nav-logo.svg" alt="Scapes">
-                </div>
-                <div class="footer-contact">
-                    <p>817-480-4999</p>
-                    <p>info@scapes.com</p>
-                </div>
-            </div>
-            <div class="footer-links">
-                <h4>Explore</h4>
-                <ul>
-                    <li><a href="#">Destinations</a></li>
-                    <li><a href="#">Accommodations</a></li>
-                    <li><a href="#">Experiences</a></li>
-                    <li><a href="#">Unforgettable Journeys</a></li>
-                    <li><a href="#">Private Air Charter</a></li>
-                    <li><a href="#">Safari Saves</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>Company</h4>
-                <ul>
-                    <li><a href="#">Travel Types</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Why Safariscapes</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Our Journal</a></li>
-                </ul>
-            </div>
-            <div class="footer-cta">
-                <a href="#" class="footer-btn-primary">Enquire Now</a>
-                <a href="#" class="footer-btn-secondary">Book a Call</a>
 
-                <div class="footer-socials">
-                    <a href="#"><img src="./assets/images/social3.png" alt=""></a>
-                    <a href="#"><img src="./assets/images/social1.png" alt=""></a>
-                    <a href="#"><img src="./assets/images/social2.png" alt=""></a>
+                <div class="footer-bottom-right">
+                    <a href="#">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#">Terms & Conditions</a>
+                    <span>|</span>
+                    <a href="#">© Copyright Scapes</a>
                 </div>
             </div>
 
         </div>
-        <div class="footer-divider"></div>
-        <div class="footer-bottom">
-            <div class="footer-bottom-left">
-                © Copyright Scapes
-            </div>
+    </footer> 
+ <script>
+    document.addEventListener("DOMContentLoaded", () => {
 
-            <div class="footer-bottom-right">
-                <a href="#">Privacy Policy</a>
-                <span>|</span>
-                <a href="#">Terms & Conditions</a>
-            </div>
-        </div>
+        /* ───────── TRAVEL SWIPER ───────── */
+        const travelSwiperEl = document.querySelector('#travelSwiper');
+        if (travelSwiperEl) {
+            new Swiper('#travelSwiper', {
+                slidesPerView: 1.15,
+                centeredSlides: true,
+                loop: true,
+                speed: 600,
+                navigation: {
+                    prevEl: '#travelPrev',
+                    nextEl: '#travelNext',
+                },
+                pagination: {
+                    el: '#travelPagination',
+                    clickable: true,
+                    bulletClass: 'swiper-pagination-bullet',
+                    bulletActiveClass: 'swiper-pagination-bullet-active',
+                },
+                breakpoints: {
+                    480: { slidesPerView: 1.3 },
+                    768: { slidesPerView: 1.5 },
+                    1024: { slidesPerView: 1.7 },
+                    1440: { slidesPerView: 1.5, spaceBetween: 70 },
+                },
+            });
+        }
 
-    </div>
-</footer>
+        /* ───────── DROPDOWN MENU ───────── */
+        document.querySelectorAll(".dropdown-toggle").forEach((btn) => {
+            btn.addEventListener("click", (e) => {
+                e.preventDefault();
+                e.stopPropagation();
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   <script id="trav-scroll">
-    const container = document.querySelector('.travellers-grid');
+                const parent = btn.closest(".has-dropdown");
 
-    document.getElementById('travNext').addEventListener('click', () => {
-        container.scrollBy({
-            left: container.offsetWidth * 0.9,
-            behavior: 'smooth'
-        });
-    });
+                document.querySelectorAll(".has-dropdown").forEach((item) => {
+                    if (item !== parent) item.classList.remove("open");
+                });
 
-    document.getElementById('travPrev').addEventListener('click', () => {
-        container.scrollBy({
-            left: -container.offsetWidth * 0.9,
-            behavior: 'smooth'
-        });
-    });
-</script>
-<script>
-    const whyClose = document.getElementById("whyStripClose");
-
-    if (whyClose) {
-        whyClose.addEventListener("click", () => {
-            document.getElementById("whyStrip").style.display = "none";
-        });
-    }
-</script>
-   <script>
-        const destSwiper = new Swiper('#destinationsSwiper', {
-            slidesPerView: 1.2,
-            spaceBetween: 12,
-            loop: false,
-            navigation: { prevEl: '#destPrev', nextEl: '#destNext' },
-            breakpoints: {
-                320: { slidesPerView: 1, spaceBetween: 4 },
-                768: { slidesPerView: 2.2, spaceBetween: 8},
-                1152: { slidesPerView: 3.1, spaceBetween: 10 },
-                1440: { slidesPerView: 3.5, spaceBetween: 12 },
-            },
+                parent.classList.toggle("open");
+            });
         });
 
+        /* ───────── VERTICAL JOURNEY SWIPER ───────── */
+        const vjSwiperEl = document.querySelector('#vjSwiper');
+        let vjSwiper, vjActive = false, vjLocked = false;
+
+        if (vjSwiperEl) {
+            vjSwiper = new Swiper('#vjSwiper', {
+                direction: 'vertical',
+                slidesPerView: 1,
+                speed: 850,
+                allowTouchMove: true,
+                mousewheel: { enabled: false },
+            });
+
+            const vjSection = document.getElementById('vj-section');
+
+            if (vjSection) {
+                new IntersectionObserver(
+                    (entries) => { vjActive = entries[0].isIntersecting; },
+                    { threshold: 0.6 }
+                ).observe(vjSection);
+            }
+
+            window.addEventListener('wheel', (e) => {
+                if (!vjActive) return;
+
+                const dn = e.deltaY > 0;
+                const up = e.deltaY < 0;
+
+                if ((vjSwiper.isBeginning && up) || (vjSwiper.isEnd && dn)) return;
+
+                e.preventDefault();
+
+                if (vjLocked) return;
+                vjLocked = true;
+
+                dn ? vjSwiper.slideNext() : vjSwiper.slidePrev();
+
+                setTimeout(() => { vjLocked = false; }, 950);
+            }, { passive: false });
+        }
+
+        /* ───────── TRAVELLERS SCROLL ───────── */
+        const container = document.querySelector('.travellers-grid');
+        const travNext = document.getElementById('travNext');
+        const travPrev = document.getElementById('travPrev');
+
+        if (container && travNext && travPrev) {
+            travNext.addEventListener('click', () => {
+                container.scrollBy({
+                    left: container.offsetWidth * 0.9,
+                    behavior: 'smooth'
+                });
+            });
+
+            travPrev.addEventListener('click', () => {
+                container.scrollBy({
+                    left: -container.offsetWidth * 0.9,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        /* ───────── WHY STRIP CLOSE ───────── */
+        const whyClose = document.getElementById("whyStripClose");
+        if (whyClose) {
+            whyClose.addEventListener("click", () => {
+                const strip = document.getElementById("whyStrip");
+                if (strip) strip.style.display = "none";
+            });
+        }
+
+        /* ───────── DESTINATION SWIPER ───────── */
+        const destSwiperEl = document.querySelector('#destinationsSwiper');
+        if (destSwiperEl) {
+            new Swiper('#destinationsSwiper', {
+                slidesPerView: 1.2,
+                spaceBetween: 12,
+                navigation: { prevEl: '#destPrev', nextEl: '#destNext' },
+                breakpoints: {
+                    320: { slidesPerView: 1, spaceBetween: 4 },
+                    768: { slidesPerView: 2.2, spaceBetween: 8 },
+                    1152: { slidesPerView: 3.1, spaceBetween: 10 },
+                    1440: { slidesPerView: 3.5, spaceBetween: 12 },
+                },
+            });
+        }
+
+        /* ───────── DESTINATION POPUPS ───────── */
         document.querySelectorAll('.dest-info-btn').forEach(btn => {
             btn.addEventListener('click', e => {
                 e.stopPropagation();
                 const id = btn.dataset.target;
+
                 document.querySelectorAll('.dest-highlights.is-open').forEach(p => {
                     if (p.id !== id) p.classList.remove('is-open');
                 });
-                document.getElementById(id).classList.toggle('is-open');
+
+                const el = document.getElementById(id);
+                if (el) el.classList.toggle('is-open');
             });
         });
 
         document.querySelectorAll('.dest-close-btn').forEach(btn => {
             btn.addEventListener('click', e => {
                 e.stopPropagation();
-                document.getElementById(btn.dataset.close).classList.remove('is-open');
+                const el = document.getElementById(btn.dataset.close);
+                if (el) el.classList.remove('is-open');
             });
         });
 
         document.addEventListener('click', () => {
-            document.querySelectorAll('.dest-highlights.is-open').forEach(p => p.classList.remove('is-open'));
+            document.querySelectorAll('.dest-highlights.is-open')
+                .forEach(p => p.classList.remove('is-open'));
         });
 
+        /* ───────── FADE-IN ON SCROLL ───────── */
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach(entry => {
@@ -635,12 +1143,14 @@
             },
             { threshold: 0.12 }
         );
+
         document.querySelectorAll('.fade-section').forEach(el => observer.observe(el));
-    
-    </script>
-<script>
-    window.addEventListener("scroll", () => {
+
+        /* ───────── HEADER SCROLL EFFECT ───────── */
+        window.addEventListener("scroll", () => {
             const header = document.querySelector(".hero-header");
+            if (!header) return;
+
             if (window.scrollY > 50) {
                 header.classList.add("is-scrolled");
             } else {
@@ -648,33 +1158,35 @@
             }
         });
 
+        /* ───────── NAV OVERLAY ───────── */
         const navOverlay = document.getElementById('navOverlay');
         const navOpen = document.getElementById('navOpen');
         const navClose = document.getElementById('navClose');
         const navBg = document.getElementById('navOverlayBg');
 
         function openNav() {
+            if (!navOverlay) return;
             navOverlay.classList.add('is-open');
             navOverlay.setAttribute('aria-hidden', 'false');
             document.body.style.overflow = 'hidden';
         }
 
         function closeNav() {
+            if (!navOverlay) return;
             navOverlay.classList.remove('is-open');
             navOverlay.setAttribute('aria-hidden', 'true');
             document.body.style.overflow = '';
         }
 
-        navOpen.addEventListener('click', openNav);
-        navClose.addEventListener('click', closeNav);
-        navBg.addEventListener('click', closeNav);
+        if (navOpen) navOpen.addEventListener('click', openNav);
+        if (navClose) navClose.addEventListener('click', closeNav);
+        if (navBg) navBg.addEventListener('click', closeNav);
 
-        // Close on Escape key
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') closeNav();
         });
 
-        // ── Hero strip dismiss ──
+        /* ───────── HERO STRIP CLOSE ───────── */
         const heroStripClose = document.getElementById('heroStripClose');
         if (heroStripClose) {
             heroStripClose.addEventListener('click', () => {
@@ -682,6 +1194,8 @@
                 if (strip) strip.style.display = 'none';
             });
         }
+
+    });
 </script>
 </body>
 
