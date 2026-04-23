@@ -1,0 +1,39 @@
+@layer base {
+  :root {
+    --font-general: "General Sans", sans-serif;
+    --font-didot: "GFS Didot", serif;
+    --font-nimbus: "Nimbus Sans L", sans-serif;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-didot);
+  }
+  body {
+    font-family: var(--font-general);
+  }
+  p {
+    @apply text-[#141C12];
+    font-family: var(--font-general);
+  }
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}

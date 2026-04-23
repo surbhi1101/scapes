@@ -1,0 +1,31 @@
+@layer components {
+  /*  DESTINATIONS SECTION */
+
+  .destinations-section {
+    @apply relative w-full pt-[103px] pb-[73px] bg-[#F5F0E8];
+    overflow: hidden;
+  }
+
+  .destinations-inner {
+    @apply relative w-full max-w-[1440px] mx-auto flex flex-col gap-[48px];
+  }
+
+  .destinations-swiper-clip {
+    @apply relative w-full;
+    overflow: hidden;
+  }
+
+  .destinations-swiper-wrap {
+    @apply relative w-full;
+  }
+
+  /*  TRAVELLERS SECTION — */
+
+  .travellers-section {
+    @apply relative w-full overflow-hidden px-[30px] py-[40px] xl:px-[120px] xl:pt-[60px] xl:pb-[49px];
+  }
+
+  .travellers-inner {
+    @apply relative z-10 max-w-[1200px] mx-auto flex flex-col items-center gap-10 lg:gap-[48px] p-3 xl:p-[64px];
+  }
+}

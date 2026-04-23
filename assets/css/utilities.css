@@ -1,0 +1,22 @@
+@layer utilities {
+  .fade-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+      opacity 0.8s ease,
+      transform 0.8s ease;
+  }
+
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .text-heading {
+    font-family: "IM Fell English", serif;
+  }
+
+  .text-body {
+    font-family: "General Sans", sans-serif;
+  }
+}
