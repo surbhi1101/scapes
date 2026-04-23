@@ -1049,7 +1049,7 @@
     @apply relative z-10;
   }
   .journeys-cta-wrap {
-    @apply flex flex-col lg:flex-row gap-[30px];
+    @apply flex flex-col lg:flex-row gap-5 lg:gap-[30px];
   }
 
   .jounery-wrap {
@@ -1151,9 +1151,8 @@
     font-family: var(--font-general);
     border-radius: 22px;
   }
-
   .about-cta-btn:hover {
-    @apply bg-[#394B33] text-[F2ECDC];
+    @apply !bg-[#394B33] !text-[#F2ECDC];
   }
 
   /* ── Right image column ── */

@@ -2267,9 +2267,12 @@
   .journeys-cta-wrap {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: calc(var(--spacing) * 5);
     @media (width >= 64rem) {
       flex-direction: row;
+    }
+    @media (width >= 64rem) {
+      gap: 30px;
     }
   }
   .jounery-wrap {
@@ -2565,8 +2568,8 @@
     border-radius: 22px;
   }
   .about-cta-btn:hover {
-    background-color: #394B33;
-    color: F2ECDC;
+    background-color: #394B33 !important;
+    color: #F2ECDC !important;
   }
   .about-img-col {
     width: 100%;
