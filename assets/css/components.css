@@ -934,7 +934,7 @@
     @apply relative w-full lg:pt-[93px] lg:pb-[111px]  lg:pl-[111px] lg:pr-[122px];
   }
   .journeys-inner {
-    @apply relative flex flex-col lg:flex-row items-stretch;
+    @apply relative flex flex-col md:flex-row items-stretch;
     min-height: 420px;
     max-width: 1200px; /* add this */
   }
@@ -1003,7 +1003,7 @@
 
   /* ── Right: green half with bg image ── */
   .journeys-content {
-    @apply relative flex flex-col justify-center gap-6 overflow-hidden
+    @apply relative flex flex-col justify-center gap-6 mt-10 lg:mt-0 overflow-hidden
            w-full 
            py-[80px];
     padding-left: 110px;
@@ -1162,7 +1162,7 @@
   }
 
   .about-img-wrap {
-    @apply w-full overflow-hidden rounded-[5px] xl:w-[403px] xl:h-[493px];
+    @apply w-full h-[300px] xl:h-full overflow-hidden rounded-[5px] xl:w-[403px] xl:h-[493px];
     aspect-ratio: 4 / 5;
   }
 
