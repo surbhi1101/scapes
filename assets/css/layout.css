@@ -16,7 +16,7 @@
   /*  DESTINATIONS SECTION */
 
   .destinations-section {
-    @apply relative w-full pt-[103px] pb-[73px] bg-[#F5F0E8];
+    @apply relative w-full py-[70px] xl:pt-[103px] xl:pb-[73px] bg-[#F5F0E8];
     overflow: hidden;
   }
 
@@ -35,13 +35,15 @@
   /*  UNFORGETTABLE JOURNEYS SECTION*/
 
   .journeys-section {
+    @apply relative w-full lg:pt-[93px] lg:pb-[111px] px-10  xl:pl-[111px] xl:pr-[122px];
+  }
+  .vj-section {
     @apply relative w-full lg:pt-[93px] lg:pb-[111px] pl-10 pr-10  xl:pl-[111px] xl:pr-[122px];
   }
-
   .journeys-inner {
-    @apply relative flex flex-col md:flex-row px-5 lg:px-0 items-stretch;
+    @apply relative flex flex-col md:flex-row px-5 gap-2 lg:gap-0 lg:px-0 items-stretch;
     min-height: 420px;
-    max-width: 1200px; /* add this */
+    max-width: 1200px;
   }
   /* ABOUT / HOW IT WORKS SECTION */
 
@@ -74,7 +76,7 @@
   /*EXPERIENCES SECTION*/
 
   .experiences-section {
-    @apply w-full bg-[#0F1A0F] xl:pt-[161px] xl:pb-[176px] px-6 py-[100px] xl:px-[80px];
+    @apply w-full bg-[#0F1A0F] xl:pt-[161px] xl:pb-[176px] px-6 py-[70px] xl:px-[80px];
   }
 
   .experiences-inner {
@@ -83,16 +85,6 @@
   /* ── Accommodation Section ── */
   .accommodation-section {
     @apply relative w-full overflow-hidden bg-[#0d0d0c];
-  }
-
-  /*  FROM OUR TRAVELLERS SECTION*/
-
-  .travellers-section {
-    @apply relative w-full overflow-hidden px-[30px] py-[40px] xl:px-[120px] xl:pt-[60px] xl:pb-[49px];
-  }
-
-  .travellers-inner {
-    @apply relative z-10 max-w-[1200px] mx-auto flex flex-col items-center gap-10 lg:gap-[48px] p-3 xl:p-[64px];
   }
 
   /* TRAVEL STYLES SECTION*/
@@ -109,7 +101,7 @@
 
   .stay-inner {
     @apply flex flex-col gap-[32px] lg:gap-[40px]
-xl:gap-[56px]  px-[30px] py-[50px]  xl:px-[80px] xl:py-[50px];
+xl:gap-[56px]  px-[30px] py-[50px]  xl:px-[80px] xl:pt-[50px] xl:pb-[114px];
     max-width: 1440px;
     margin-inline: auto;
   }
@@ -121,7 +113,7 @@ xl:gap-[56px]  px-[30px] py-[50px]  xl:px-[80px] xl:py-[50px];
 
   .footer-inner {
     @apply max-w-[1920px] mx-auto 
-         px-4 sm:px-6 md:px-8 lg:px-12 xl:pl-[114px] xl:pr-[80px] 2xl:px-[120px]
-         pt-[50px] sm:pt-[60px] md:pt-[70px]  xl:pt-[101px] 2xl:py-[120px];
+         px-4 sm:px-6 md:px-8 lg:px-12 xl:pl-[114px] xl:pr-[80px] 
+         pt-[50px] sm:pt-[60px] md:pt-[70px]  xl:pt-[101px];
   }
 }

@@ -17,6 +17,8 @@
 
 <body>
     <main>
+
+        <!-- navbar -->
         <div class="nav-overlay" id="navOverlay" aria-hidden="true">
             <div class="nav-panel">
 
@@ -138,7 +140,7 @@
                 </div>
             </div>
         </div>
-
+<!-- hero-section -->
         <section class="hero-section" id="hero">
             <div class="hero-bg">
                 <img src="./assets/images/Hero.jpg" alt="African safari landscape at golden hour" />
@@ -261,11 +263,11 @@
                                                     aria-label="Close">−</button>
                                                 <span class="dest-highlights-label">Highlights:</span>
                                             </div>
-                                             <div class="dest-highlights-tags">
-                                                <span class="dest-highlights-tag">Okavango Delta</span>
-                                                <span class="dest-highlights-tag">Chobe NP</span>
-                                                <span class="dest-highlights-tag">Big 5</span>
-                                            </div>
+                                        <div class="dest-highlights-tags">
+                                            <span class="dest-highlights-tag">Mount Kenyan</span>
+                                            <span class="dest-highlights-tag">Maasai Mara</span>
+                                            <span class="dest-highlights-tag">Big 5</span>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -286,11 +288,11 @@
                                                     aria-label="Close">−</button>
                                                 <span class="dest-highlights-label">Highlights:</span>
                                             </div>
-                                            <div class="dest-highlights-tags">
-                                                <span class="dest-highlights-tag">Mount Kenyan</span>
-                                                <span class="dest-highlights-tag">Maasai Mara</span>
-                                                <span class="dest-highlights-tag">Big 6</span>
-                                            </div>
+                                        <div class="dest-highlights-tags">
+                                            <span class="dest-highlights-tag">Mount Kenyan</span>
+                                            <span class="dest-highlights-tag">Maasai Mara</span>
+                                            <span class="dest-highlights-tag">Big 5</span>
+                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -311,10 +313,10 @@
                                                     aria-label="Close">−</button>
                                                 <span class="dest-highlights-label">Highlights:</span>
                                             </div>
-                                             <div class="dest-highlights-tags">
-                                                <span class="dest-highlights-tag">Bazaruto Arch.</span>
-                                                <span class="dest-highlights-tag">Coral Reefs</span>
-                                                <span class="dest-highlights-tag">Whale Sharks</span>
+                                            <div class="dest-highlights-tags">
+                                                <span class="dest-highlights-tag">Mount Kenyan</span>
+                                                <span class="dest-highlights-tag">Maasai Mara</span>
+                                                <span class="dest-highlights-tag">Big 5</span>
                                             </div>
                                         </div>
                                     </div>
@@ -337,9 +339,9 @@
                                                 <span class="dest-highlights-label">Highlights:</span>
                                             </div>
                                             <div class="dest-highlights-tags">
-                                                <span class="dest-highlights-tag">Serengeti</span>
-                                                <span class="dest-highlights-tag">Ngorongoro</span>
-                                                <span class="dest-highlights-tag">Zanzibar</span>
+                                                <span class="dest-highlights-tag">Mount Kenyan</span>
+                                                <span class="dest-highlights-tag">Maasai Mara</span>
+                                                <span class="dest-highlights-tag">Big 5</span>
                                             </div>
                                         </div>
                                     </div>
@@ -361,11 +363,11 @@
                                                     aria-label="Close">−</button>
                                                 <span class="dest-highlights-label">Highlights:</span>
                                             </div>
-                                            <div class="dest-highlights-tags">
-                                                <span class="dest-highlights-tag">Gorilla Trekking</span>
-                                                <span class="dest-highlights-tag">Volcanoes NP</span>
-                                                <span class="dest-highlights-tag">Lake Kivu</span>
-                                            </div>
+                                                <div class="dest-highlights-tags">
+                                                    <span class="dest-highlights-tag">Mount Kenyan</span>
+                                                    <span class="dest-highlights-tag">Maasai Mara</span>
+                                                    <span class="dest-highlights-tag">Big 5</span>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
@@ -758,7 +760,7 @@
                     <div class="swiper-slide vj-slide">
 
                         <div class="journeys-inner">
-                            <div class="journeys-card-wrap">
+                            <div class="dreams-card-wrap">
                                 <div class="journeys-card">
                                     <div class="journeys-card-img">
                                         <img src="./assets/images/dream1.png"
@@ -786,7 +788,7 @@
                                             perfect for any traveller.</p>
                                     </div>
                                     <div class="journeys-cta-wrap">
-                                        <a href="#" class="View-cta-btn">View Itineraries</a>
+                                        <a href="#" class="View-cta-btn">enquire now</a>
                                         <a href="#" class="book-cta-btn">Book a call</a>
                                     </div>
                                 </div>
@@ -796,7 +798,7 @@
                     </div>
                     <div class="swiper-slide vj-slide">
                         <div class="journeys-inner">
-   <div class="journeys-card-wrap">
+  <div class="dreams-card-wrap">
                                 <div class="journeys-card">
                                     <div class="journeys-card-img">
                                         <img src="./assets/images/dream1.png"
@@ -834,7 +836,7 @@
 
                     <div class="swiper-slide vj-slide">
                         <div class="journeys-inner">
-                            <div class="journeys-card-wrap">
+                            <div class="dreams-card-wrap">
                                 <div class="journeys-card">
                                     <div class="journeys-card-img">
                                         <img src="./assets/images/dream1.png"
@@ -981,10 +983,15 @@
                 centeredSlides: true,
                 loop: true,
                 speed: 600,
+                 autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
                 navigation: {
                     prevEl: '#travelPrev',
                     nextEl: '#travelNext',
                 },
+                
                 pagination: {
                     el: '#travelPagination',
                     clickable: true,
@@ -1093,6 +1100,10 @@
             new Swiper('#destinationsSwiper', {
                 slidesPerView: 1.2,
                 spaceBetween: 12,
+                   autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
                 navigation: { prevEl: '#destPrev', nextEl: '#destNext' },
                 breakpoints: {
                     320: { slidesPerView: 1, spaceBetween: 4 },
