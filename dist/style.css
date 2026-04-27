@@ -691,6 +691,7 @@
     padding-bottom: calc(var(--spacing) * 0);
   }
   .nav-close-btn:hover {
+    cursor: pointer;
     opacity: 60%;
   }
   .nav-panel-inner {
@@ -760,7 +761,7 @@
     transition-delay: 0s;
   }
   .nav-overlay:not(.is-open) .nav-links-col > *, .nav-overlay:not(.is-open) .nav-images-col > * {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
     transition: all 0.3s ease;
   }
@@ -917,6 +918,7 @@
     transform: translateY(0);
   }
   .dropdown-toggle img {
+    cursor: pointer;
     transition: transform 0.3s ease;
   }
   .has-dropdown.open .dropdown-toggle img {
@@ -2371,7 +2373,19 @@
     border-radius: 6px;
   }
   .travel-pagination .swiper-pagination-bullet {
+    display: block;
+    height: 5px !important;
+    width: 5px !important;
+    cursor: pointer;
+    border-radius: calc(infinity * 1px);
     background-color: #F2ECDC !important;
+    opacity: 100% !important;
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+    margin: 0 !important;
   }
   .travel-pagination .swiper-pagination-bullet-active {
     background-color: #FFB931 !important;
@@ -2504,28 +2518,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    padding-top: 8px;
-  }
-  .travel-pagination .swiper-pagination-bullet {
-    display: block;
-    cursor: pointer;
-    border-radius: calc(infinity * 1px);
-    transition-property: all;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-    --tw-duration: 300ms;
-    transition-duration: 300ms;
-    width: 7px;
-    height: 7px;
-    background: rgba(245, 240, 232, 0.35);
-    opacity: 1;
-    margin: 0 !important;
-  }
-  .travel-pagination .swiper-pagination-bullet-active {
-    background: #f5f0e8;
-    width: 20px;
-    border-radius: 4px;
+    gap: 15px;
   }
   .vj-section {
     position: relative;

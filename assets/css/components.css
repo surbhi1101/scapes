@@ -138,7 +138,7 @@
   }
 
   .nav-close-btn:hover {
-    @apply opacity-60;
+    @apply opacity-60 cursor-pointer;
   }
 
   .nav-panel-inner {
@@ -180,7 +180,7 @@
 
   .nav-overlay:not(.is-open) .nav-links-col > *,
   .nav-overlay:not(.is-open) .nav-images-col > * {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(20px);
     transition: all 0.3s ease;
   }
@@ -275,6 +275,7 @@
 
   /* rotate arrow */
   .dropdown-toggle img {
+    @apply cursor-pointer;
     transition: transform 0.3s ease;
   }
 
@@ -940,12 +941,12 @@
     border-radius: 6px;
   }
   .travel-pagination .swiper-pagination-bullet {
-    @apply !bg-[#F2ECDC];
+    @apply block !w-[5px] !h-[5px] rounded-full !opacity-100 transition-all duration-300 cursor-pointer !bg-[#F2ECDC];
+    margin: 0 !important;
   }
   .travel-pagination .swiper-pagination-bullet-active {
     @apply !bg-[#FFB931];
   }
-
   @media (min-width: 1152px) {
     .travel-card {
       aspect-ratio: 16 / 9;
@@ -1021,23 +1022,9 @@
   }
 
   .travel-pagination {
-    @apply flex items-center justify-center gap-[8px];
-    padding-top: 8px;
-  }
-  .travel-pagination .swiper-pagination-bullet {
-    @apply block rounded-full transition-all duration-300 cursor-pointer;
-    width: 7px;
-    height: 7px;
-    background: rgba(245, 240, 232, 0.35);
-    opacity: 1;
-    margin: 0 !important;
+    @apply flex items-center justify-center gap-[15px];
   }
 
-  .travel-pagination .swiper-pagination-bullet-active {
-    background: #f5f0e8;
-    width: 20px;
-    border-radius: 4px;
-  }
   .vj-section {
     @apply relative w-full pt-4 md:pt-20 px-2 lg:px-10 xl:pt-[93px] xl:pb-[111px]  xl:pl-[111px] xl:pr-[122px];
   }
