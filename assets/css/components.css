@@ -847,7 +847,7 @@
   /* ABOUT / HOW IT WORKS SECTION */
 
   .about-text-col {
-    @apply flex flex-col gap-5  xl:mt-[70px] w-[50%] xl:w-full 2xl:w-[50%];
+    @apply flex flex-col gap-5  xl:mt-[70px] xl:w-full 2xl:w-[50%];
   }
   .about-headline-wrap p {
     @apply text-[#F2ECDC] font-medium leading-[120%] tracking-[2%] 
@@ -1026,7 +1026,7 @@
   }
 
   .vj-section {
-    @apply relative w-full pt-4 md:pt-20 px-2 lg:px-10 xl:pt-[93px] xl:pb-[111px]  xl:pl-[111px] xl:pr-[122px];
+    @apply relative w-full pt-4 md:pt-20 px-2 lg:px-10 xl:pt-[93px] xl:pb-[111px] 2xl:pb-0  xl:pl-[111px] xl:pr-[122px];
   }
   /* STAY UP TO DATE SECTION */
   .stay-top {
