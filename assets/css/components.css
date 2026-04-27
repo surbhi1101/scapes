@@ -816,7 +816,7 @@
   }
 
   .journeys-cta-btn:hover {
-    @apply bg-[#394B33] text-[#F2ECDC];
+    @apply !bg-[#394B33] text-[#F2ECDC];
   }
 
   .book-cta-btn {

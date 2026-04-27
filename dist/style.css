@@ -2051,7 +2051,7 @@
     border-radius: 22px;
   }
   .journeys-cta-btn:hover {
-    background-color: #394B33;
+    background-color: #394B33 !important;
     color: #F2ECDC;
   }
   .book-cta-btn {
