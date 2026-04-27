@@ -146,7 +146,7 @@
   }
 
   .nav-links-col {
-    @apply flex flex-col pl-5 lg:pl-[152px] mt-[16px] shrink-0;
+    @apply flex flex-col pl-5 md:pl-[152px] mt-[16px] shrink-0;
   }
   .nav-primary {
     @apply mb-[48px] flex flex-col;
@@ -672,8 +672,7 @@
 
   .journeys-card-wrap {
     @apply relative flex items-center
-           w-full lg:w-[50%] 2xl:w-full z-10 mt-10 lg:mt-0;
-    min-height: 520px;
+           w-full lg:w-[50%] 2xl:w-full z-10 mt-10 lg:mt-0 min-h-[593px];
   }
 
   @media (max-width: 1151px) {
@@ -710,7 +709,7 @@
   }
 
   .journeys-card-img {
-    @apply w-full overflow-hidden;
+    @apply w-full overflow-hidden h-full;
     aspect-ratio: 4 / 3;
   }
 
@@ -719,7 +718,7 @@
   }
 
   .journeys-stamp {
-    @apply absolute top-[37px] right-[44px] w-[91px] h-[75px];
+    @apply absolute top-7 lg:top-[37px] right-8 lg:right-[44px] w-[40px] h-[40px] lg:w-[91px] lg:h-[75px];
     transform: rotate(-3.63deg);
   }
 
@@ -727,7 +726,7 @@
     @apply w-full h-full object-contain block;
   }
   .dream-stamp {
-    @apply absolute top-[45px] right-[36px] w-[49px] h-[73px];
+    @apply absolute top-7 lg:top-[45px] right-8 lg:right-[36px] w-[40px] h-[40px]  lg:w-[49px] lg:h-[73px];
     transform: rotate(-4.46deg);
   }
 
@@ -743,21 +742,18 @@
     font-family: var(--font-general);
   }
   .journeys-content {
-    @apply relative flex flex-col justify-center gap-6 mt-10 lg:mt-0 overflow-hidden
-           w-full rounded-[5px]
+    @apply relative flex flex-col justify-center gap-6 md:mt-10 lg:mt-0 overflow-hidden
+           w-full rounded-[5px] min-h-[593px] 2xl:min-h-[850px]
            py-[80px];
     padding-left: 110px;
     padding-right: 115px;
     background-color: #2b3927;
-    min-height: 593px;
   }
 
   .dreams-content {
     @apply relative flex flex-col justify-center gap-3 xl:gap-6 overflow-hidden
-           w-full bg-[#F2ECDC] rounded-[5px]
-          xl:py-[170px];
-    padding-left: 95px;
-    min-height: 520px;
+           w-full bg-[#F2ECDC] rounded-[5px] min-h-[520px] 2xl:min-h-[850px]
+          xl:py-[170px] pl-[70px] 2xl:px-20;
   }
 
   @media (max-width: 1151px) {
@@ -791,13 +787,13 @@
   }
 
   .jounery-wrap {
-    @apply lg:pl-[110px] lg:pr-[50px] flex flex-col gap-3 lg:gap-5;
+    @apply lg:pl-[110px] 2xl:pl-0 2xl:pr-0 lg:pr-[50px] flex flex-col gap-3 lg:gap-5;
   }
   .journeys-heading-wrap h2 {
     @apply uppercase font-normal text-[#FFFFFF] leading-[120%] tracking-[0%]  text-[22px] md:text-[32px] lg:text-[42px] xl:text-[50px];
   }
   .dreams-heading-wrap h2 {
-    @apply uppercase font-normal -mt-[40px] md:mt-0 text-[#394B33] leading-[120%] tracking-[0%]  text-[20px] md:text-[32px] lg:text-[42px] xl:text-[50px];
+    @apply uppercase font-normal text-[#394B33] leading-[120%] tracking-[0%]  text-[20px] md:text-[32px] lg:text-[42px] xl:text-[50px];
   }
   .journeys-body-wrap p {
     @apply text-white leading-[130%] tracking-[0%] opacity-80 text-[16px] 2xl:text-[20px] font-normal;
@@ -847,11 +843,11 @@
   /* ABOUT / HOW IT WORKS SECTION */
 
   .about-text-col {
-    @apply flex flex-col gap-5  xl:mt-[70px] xl:w-full 2xl:w-[50%];
+    @apply flex flex-col gap-5  xl:mt-[70px] lg:w-[50%] xl:w-full 2xl:w-[50%];
   }
   .about-headline-wrap p {
     @apply text-[#F2ECDC] font-medium leading-[120%] tracking-[2%] 
-    text-[22px] xl:text-[30px] 2xl:text-[34px];
+    text-[22px] xl:text-[30px] 2xl:text-[36px];
   }
 
   .about-body-wrap p {
@@ -882,7 +878,6 @@
 
   .about-img-wrap {
     @apply w-full h-[300px] xl:h-full 2xl:w-full 2xl:h-[500px] overflow-hidden rounded-[5px] xl:w-[403px] xl:h-[493px];
-    aspect-ratio: 4 / 5;
   }
 
   .about-img-wrap img {
@@ -1026,7 +1021,7 @@
   }
 
   .vj-section {
-    @apply relative w-full pt-4 md:pt-20 px-2 lg:px-10 xl:pt-[93px] xl:pb-[111px] 2xl:pb-0  xl:pl-[111px] xl:pr-[122px];
+    @apply relative w-full pt-4 md:pt-20 px-6 lg:px-10 xl:pt-[93px] xl:pb-[111px] 2xl:pb-0  xl:pl-[111px] xl:pr-[122px];
   }
   /* STAY UP TO DATE SECTION */
   .stay-top {
@@ -1040,7 +1035,7 @@
 
   .stay-heading-wrap h2 {
     @apply uppercase font-normal leading-[130%] text-[#FFFFFF] tracking-[0%]
-         text-[24px] lg:text-[30px] 2xl:text-[34px];
+         text-[24px] lg:text-[30px] 2xl:text-[36px];
   }
 
   .stay-body-wrap {
@@ -1124,8 +1119,9 @@
     @apply inline-flex w-fit mt-2
          bg-[#F2ECDC] text-[#394B33]
          px-[25px] py-[15px] h-[41px] 2xl:h-[50px] font-semibold
-         rounded-[22px] uppercase text-[15px] 2xl:text-[20px] leading-[120%]
-         tracking-[5%] transition-all;
+         rounded-[22px] uppercase leading-[120%]
+         tracking-[5%] transition-all
+           text-[11px] md:text-[12px] lg:text-[15px]  2xl:text-[20px];
   }
 
   .experiences-btn:hover {
@@ -1155,7 +1151,7 @@
     @apply flex flex-col gap-[10px];
   }
   .experience-content h3 {
-    @apply text-white text-[18px] lg:text-[24px] tracking-[2%] leading-[120%] font-medium xl:text-[30px] 2xl:text-[34px];
+    @apply text-white text-[18px] lg:text-[24px] tracking-[2%] leading-[120%] font-medium xl:text-[30px] 2xl:text-[36px];
     font-family: var(--font-general);
   }
 
@@ -1229,7 +1225,7 @@
 
   .accommodation-content {
     @apply absolute bottom-0 left-0 gap-2 lg:gap-5 flex-col flex 
-    p-6 xl:p-0 xl:pb-[64px] xl:pl-[91px];
+    p-6 xl:p-0 xl:pb-[64px] xl:pl-[91px] 2xl:pb-[120px] 2xl:pl-[100px];
   }
 
   .accommodation-heading {
@@ -1262,7 +1258,7 @@
   }
 
   .travellers-heading-wrap h2 {
-    @apply uppercase font-normal text-[#394B33] tracking-[0%] leading-[120%] text-[26px] lg:text-[30px] 2xl:text-[34px];
+    @apply uppercase font-normal text-[#394B33] tracking-[0%] leading-[120%] text-[26px] lg:text-[30px] 2xl:text-[36px];
   }
 
   .travellers-grid {
@@ -1383,7 +1379,7 @@
          px-[18px] sm:px-[20px] md:px-[22px] lg:px-[24px] xl:px-[25px] xl:py-[15px]
          py-[8px] sm:py-[9px] md:py-[10px] h-[41px] 2xl:h-[50px] font-semibold
          
-         text-[11px] sm:text-[12px] md:text-[13px] xl:text-[15px]  2xl:text-[20px]
+         text-[11px] md:text-[13px] xl:text-[15px]  2xl:text-[20px]
          rounded-[22px] transition-all duration-300;
     font-family: var(--font-general);
   }

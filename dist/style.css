@@ -452,7 +452,7 @@
     z-index: 10;
     margin-inline: auto;
     display: flex;
-    max-width: 1200px;
+    max-width: 1920;
     flex-direction: column;
     align-items: center;
     gap: calc(var(--spacing) * 10);
@@ -494,7 +494,7 @@
   .experiences-inner {
     margin-inline: auto;
     display: flex;
-    max-width: 1400px;
+    max-width: 1920px;
     flex-direction: column;
     gap: 40px;
   }
@@ -506,6 +506,12 @@
   }
   .vj-section {
     height: 100vh;
+    @media (width >= 1152px) {
+      height: 110vh;
+    }
+    @media (width >= 1440px) {
+      height: 100vh;
+    }
     overflow: hidden;
   }
   .stay-section {
@@ -729,7 +735,7 @@
     flex-shrink: 0;
     flex-direction: column;
     padding-left: calc(var(--spacing) * 5);
-    @media (width >= 1152px) {
+    @media (width >= 768px) {
       padding-left: 152px;
     }
   }
@@ -1826,6 +1832,7 @@
     z-index: 10;
     margin-top: calc(var(--spacing) * 10);
     display: flex;
+    min-height: 593px;
     width: 100%;
     align-items: center;
     @media (width >= 1152px) {
@@ -1837,7 +1844,6 @@
     @media (width >= 1920px) {
       width: 100%;
     }
-    min-height: 520px;
   }
   @media (max-width: 1151px) {
     .journeys-card-wrap {
@@ -1887,6 +1893,7 @@
     }
   }
   .journeys-card-img {
+    height: 100%;
     width: 100%;
     overflow: hidden;
     aspect-ratio: 4 / 3;
@@ -1901,10 +1908,22 @@
   }
   .journeys-stamp {
     position: absolute;
-    top: 37px;
-    right: 44px;
-    height: 75px;
-    width: 91px;
+    top: calc(var(--spacing) * 7);
+    right: calc(var(--spacing) * 8);
+    height: 40px;
+    width: 40px;
+    @media (width >= 1152px) {
+      top: 37px;
+    }
+    @media (width >= 1152px) {
+      right: 44px;
+    }
+    @media (width >= 1152px) {
+      height: 75px;
+    }
+    @media (width >= 1152px) {
+      width: 91px;
+    }
     transform: rotate(-3.63deg);
   }
   .journeys-stamp img {
@@ -1915,10 +1934,22 @@
   }
   .dream-stamp {
     position: absolute;
-    top: 45px;
-    right: 36px;
-    height: 73px;
-    width: 49px;
+    top: calc(var(--spacing) * 7);
+    right: calc(var(--spacing) * 8);
+    height: 40px;
+    width: 40px;
+    @media (width >= 1152px) {
+      top: 45px;
+    }
+    @media (width >= 1152px) {
+      right: 36px;
+    }
+    @media (width >= 1152px) {
+      height: 73px;
+    }
+    @media (width >= 1152px) {
+      width: 49px;
+    }
     transform: rotate(-4.46deg);
   }
   .dream-stamp img {
@@ -1953,8 +1984,8 @@
   }
   .journeys-content {
     position: relative;
-    margin-top: calc(var(--spacing) * 10);
     display: flex;
+    min-height: 593px;
     width: 100%;
     flex-direction: column;
     justify-content: center;
@@ -1962,17 +1993,23 @@
     overflow: hidden;
     border-radius: 5px;
     padding-block: 80px;
+    @media (width >= 768px) {
+      margin-top: calc(var(--spacing) * 10);
+    }
     @media (width >= 1152px) {
       margin-top: calc(var(--spacing) * 0);
+    }
+    @media (width >= 1920px) {
+      min-height: 850px;
     }
     padding-left: 110px;
     padding-right: 115px;
     background-color: #2b3927;
-    min-height: 593px;
   }
   .dreams-content {
     position: relative;
     display: flex;
+    min-height: 520px;
     width: 100%;
     flex-direction: column;
     justify-content: center;
@@ -1980,14 +2017,19 @@
     overflow: hidden;
     border-radius: 5px;
     background-color: #F2ECDC;
+    padding-left: 70px;
     @media (width >= 1440px) {
       gap: calc(var(--spacing) * 6);
     }
     @media (width >= 1440px) {
       padding-block: 170px;
     }
-    padding-left: 95px;
-    min-height: 520px;
+    @media (width >= 1920px) {
+      min-height: 850px;
+    }
+    @media (width >= 1920px) {
+      padding-inline: calc(var(--spacing) * 20);
+    }
   }
   @media (max-width: 1151px) {
     .journeys-content {
@@ -2048,6 +2090,12 @@
     @media (width >= 1152px) {
       padding-left: 110px;
     }
+    @media (width >= 1920px) {
+      padding-right: calc(var(--spacing) * 0);
+    }
+    @media (width >= 1920px) {
+      padding-left: calc(var(--spacing) * 0);
+    }
   }
   .journeys-heading-wrap h2 {
     font-size: 22px;
@@ -2070,7 +2118,6 @@
     }
   }
   .dreams-heading-wrap h2 {
-    margin-top: calc(40px * -1);
     font-size: 20px;
     --tw-leading: 120%;
     line-height: 120%;
@@ -2080,9 +2127,6 @@
     letter-spacing: 0%;
     color: #394B33;
     text-transform: uppercase;
-    @media (width >= 768px) {
-      margin-top: calc(var(--spacing) * 0);
-    }
     @media (width >= 768px) {
       font-size: 32px;
     }
@@ -2260,6 +2304,9 @@
     display: flex;
     flex-direction: column;
     gap: calc(var(--spacing) * 5);
+    @media (width >= 1152px) {
+      width: 50%;
+    }
     @media (width >= 1440px) {
       margin-top: 70px;
     }
@@ -2283,7 +2330,7 @@
       font-size: 30px;
     }
     @media (width >= 1920px) {
-      font-size: 34px;
+      font-size: 36px;
     }
   }
   .about-body-wrap p {
@@ -2392,7 +2439,6 @@
     @media (width >= 1920px) {
       width: 100%;
     }
-    aspect-ratio: 4 / 5;
   }
   .about-img-wrap img {
     display: block;
@@ -2681,7 +2727,7 @@
   .vj-section {
     position: relative;
     width: 100%;
-    padding-inline: calc(var(--spacing) * 2);
+    padding-inline: calc(var(--spacing) * 6);
     padding-top: calc(var(--spacing) * 4);
     @media (width >= 768px) {
       padding-top: calc(var(--spacing) * 20);
@@ -2737,7 +2783,7 @@
       font-size: 30px;
     }
     @media (width >= 1920px) {
-      font-size: 34px;
+      font-size: 36px;
     }
   }
   .stay-body-wrap {
@@ -2927,7 +2973,7 @@
     background-color: #F2ECDC;
     padding-inline: 25px;
     padding-block: 15px;
-    font-size: 15px;
+    font-size: 11px;
     --tw-leading: 120%;
     line-height: 120%;
     --tw-font-weight: var(--font-weight-semibold);
@@ -2939,6 +2985,12 @@
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
+    @media (width >= 768px) {
+      font-size: 12px;
+    }
+    @media (width >= 1152px) {
+      font-size: 15px;
+    }
     @media (width >= 1920px) {
       height: 50px;
     }
@@ -3003,7 +3055,7 @@
       font-size: 30px;
     }
     @media (width >= 1920px) {
-      font-size: 34px;
+      font-size: 36px;
     }
     font-family: var(--font-general);
   }
@@ -3201,6 +3253,12 @@
     @media (width >= 1440px) {
       padding-left: 91px;
     }
+    @media (width >= 1920px) {
+      padding-bottom: 120px;
+    }
+    @media (width >= 1920px) {
+      padding-left: 100px;
+    }
   }
   .accommodation-heading {
     font-size: 26px;
@@ -3278,7 +3336,7 @@
       font-size: 30px;
     }
     @media (width >= 1920px) {
-      font-size: 34px;
+      font-size: 36px;
     }
   }
   .travellers-grid {
@@ -3623,9 +3681,6 @@
     }
     @media (width >= 320px) {
       padding-block: 9px;
-    }
-    @media (width >= 320px) {
-      font-size: 12px;
     }
     @media (width >= 768px) {
       padding-inline: 22px;

@@ -77,7 +77,7 @@
   }
 
   .travellers-inner {
-    @apply relative z-10 max-w-[1200px] mx-auto flex flex-col items-center gap-10 lg:gap-[48px] p-3 xl:p-[64px];
+    @apply relative z-10 max-w-[1920] mx-auto flex flex-col items-center gap-10 lg:gap-[48px] p-3 xl:p-[64px];
   }
   .travel-section {
     @apply relative w-full pt-20 gap-[49px] xl:pt-[126px] overflow-hidden flex flex-col;
@@ -89,7 +89,7 @@
   }
 
   .experiences-inner {
-    @apply max-w-[1400px] mx-auto flex flex-col gap-[40px];
+    @apply max-w-[1920px] mx-auto flex flex-col gap-[40px];
   }
   /* ── Accommodation Section ── */
   .accommodation-section {
@@ -99,7 +99,7 @@
   /* TRAVEL STYLES SECTION*/
 
   .vj-section {
-    height: 100vh;
+    @apply h-[100vh] lg:h-[110vh] xl:h-[100vh];
     overflow: hidden;
   }
   /* STAY UP TO DATE SECTION */

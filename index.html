@@ -980,38 +980,7 @@
  <script>
     document.addEventListener("DOMContentLoaded", () => {
 
-        /* ───────── TRAVEL SWIPER ───────── */
-        const travelSwiperEl = document.querySelector('#travelSwiper');
-        if (travelSwiperEl) {
-            new Swiper('#travelSwiper', {
-                slidesPerView: 1.15,
-                centeredSlides: true,
-                loop: true,
-                speed: 600,
-                 autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-                },
-                navigation: {
-                    prevEl: '#travelPrev',
-                    nextEl: '#travelNext',
-                },
-                
-                pagination: {
-                    el: '#travelPagination',
-                    clickable: true,
-                    bulletClass: 'swiper-pagination-bullet',
-                    bulletActiveClass: 'swiper-pagination-bullet-active',
-                },
-                breakpoints: {
-                    480: { slidesPerView: 1.3 },
-                    768: { slidesPerView: 1.5 },
-                    1024: { slidesPerView: 1.7 },
-                    1440: { slidesPerView: 1.5, spaceBetween: 70 },
-                },
-            });
-        }
-
+       
         /* ───────── DROPDOWN MENU ───────── */
         document.querySelectorAll(".dropdown-toggle").forEach((btn) => {
             btn.addEventListener("click", (e) => {
@@ -1103,7 +1072,7 @@
         const destSwiperEl = document.querySelector('#destinationsSwiper');
         if (destSwiperEl) {
             new Swiper('#destinationsSwiper', {
-                slidesPerView: 1.2,
+                slidesPerView: 1.2, loop: true,
                 spaceBetween: 12,
                    autoplay: {
                     delay: 2500,
@@ -1118,6 +1087,38 @@
                 },
             });
         }
+         /* ───────── TRAVEL SWIPER ───────── */
+        const travelSwiperEl = document.querySelector('#travelSwiper');
+        if (travelSwiperEl) {
+            new Swiper('#travelSwiper', {
+                slidesPerView: 1.15,
+                centeredSlides: true,
+                loop: true,
+                speed: 600,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    prevEl: '#travelPrev',
+                    nextEl: '#travelNext',
+                },
+
+                pagination: {
+                    el: '#travelPagination',
+                    clickable: true,
+                    bulletClass: 'swiper-pagination-bullet',
+                    bulletActiveClass: 'swiper-pagination-bullet-active',
+                },
+                breakpoints: {
+                    480: { slidesPerView: 1.3 },
+                    768: { slidesPerView: 1.5 },
+                    1024: { slidesPerView: 1.7 },
+                    1440: { slidesPerView: 1.5, spaceBetween: 70 },
+                },
+            });
+        }
+
 
         /* ───────── DESTINATION POPUPS ───────── */
         document.querySelectorAll('.dest-info-btn').forEach(btn => {
