@@ -719,6 +719,9 @@
     flex: 1;
     gap: 98px;
     overflow: hidden;
+    @media (width >= 96rem) {
+      gap: 120px;
+    }
   }
   .nav-links-col {
     margin-top: 16px;
@@ -766,6 +769,9 @@
     transition-duration: var(--tw-duration, var(--default-transition-duration));
     --tw-duration: 200ms;
     transition-duration: 200ms;
+    @media (width >= 96rem) {
+      font-size: 20px;
+    }
     font-family: var(--font-general);
   }
   .nav-primary ul li a:hover {
@@ -815,6 +821,9 @@
     transition-duration: var(--tw-duration, var(--default-transition-duration));
     --tw-duration: 200ms;
     transition-duration: 200ms;
+    @media (width >= 96rem) {
+      font-size: 20px;
+    }
     font-family: var(--font-general);
   }
   .nav-secondary ul li a:hover {
@@ -842,6 +851,12 @@
     @media (width >= 64rem) {
       max-width: 324px;
     }
+    @media (width >= 96rem) {
+      max-height: 500px;
+    }
+    @media (width >= 96rem) {
+      max-width: 500px;
+    }
   }
   .nav-img-wrap img {
     display: block;
@@ -856,6 +871,12 @@
     height: 45px;
     width: 45px;
     justify-content: flex-end;
+    @media (width >= 96rem) {
+      height: 55px;
+    }
+    @media (width >= 96rem) {
+      width: 55px;
+    }
   }
   .nav-logo-wrap img {
     height: 100%;
@@ -2647,6 +2668,12 @@
     transition-duration: var(--tw-duration, var(--default-transition-duration));
     --tw-duration: 300ms;
     transition-duration: 300ms;
+    @media (width >= 96rem) {
+      height: calc(var(--spacing) * 2) !important;
+    }
+    @media (width >= 96rem) {
+      width: calc(var(--spacing) * 2) !important;
+    }
     margin: 0 !important;
   }
   .travel-pagination .swiper-pagination-bullet-active {
