@@ -244,9 +244,9 @@
 
   .nav-enquire-btn {
     @apply inline-flex items-center justify-center uppercase
-         tracking-[5%] leading-[120%] font-semibold h-[41px]
+         tracking-[5%] leading-[120%] font-semibold h-[41px] 2xl:h-[50px]
          bg-[#F2ECDC] text-[#394B33] no-underline rounded-[22px]
-         transition-all duration-300 text-[15px] px-[25px] py-[15px];
+         transition-all duration-300 text-[15px]  2xl:text-[20px] px-[25px] py-[15px];
     font-family: var(--font-general);
   }
 
@@ -364,9 +364,9 @@
   }
 
   .hero-enquire-btn {
-    @apply inline-flex items-center justify-center h-[41px] uppercase tracking-[5%] leading-[120%]
+    @apply inline-flex items-center justify-center h-[41px] 2xl:h-[50px] uppercase tracking-[5%] leading-[120%]
     font-semibold text-white no-underline
-         transition-all duration-300 text-[12px] xl:text-[15px]
+         transition-all duration-300 text-[12px] xl:text-[15px] 2xl:text-[20px]
          bg-[#F2ECDC] !text-[#394B33] hover:bg-[#394B33] px-[25px] py-[15px] hover:!text-[#F2ECDC];
     border-radius: 22px;
     font-family: var(--font-general);
@@ -380,7 +380,7 @@
   }
 
   .hero-sub-wrap p {
-    @apply text-white font-normal leading-[130%] tracking-[0%] opacity-[80%] text-[16px] xl:text-[22px];
+    @apply text-white font-normal leading-[130%] tracking-[0%] opacity-[80%] text-[16px] xl:text-[22px] 2xl:text-[24px];
   }
   .hero-strip {
     @apply absolute bottom-0 left-0 right-0 z-20 bg-[#394B33];
@@ -411,12 +411,12 @@
 
   .why-strip-inner p {
     @apply text-[#F2ECDC] uppercase text-[10px] md:text-[12px] xl:text-[16px] 
-    leading-[120%]
+    leading-[120%] 2xl:text-[18px]
     font-semibold tracking-[10%];
   }
 
   .why-strip-inner a {
-    @apply text-[#F2ECDC] uppercase text-[10px] md:text-[12px] xl:text-[16px] tracking-[10%] leading-[120%] font-light;
+    @apply text-[#F2ECDC] 2xl:text-[18px] uppercase text-[10px] md:text-[12px] xl:text-[16px] tracking-[10%] leading-[120%] font-light;
     font-family: var(--font-general);
   }
 
@@ -433,7 +433,7 @@
   }
 
   .why-content p {
-    @apply text-white font-normal opacity-80 max-w-[668px] text-[14px] xl:text-[17px] tracking-[0%] leading-[130%];
+    @apply text-white font-normal opacity-80 max-w-[668px] text-[14px] xl:text-[17px] 2xl:text-[20px] tracking-[0%] leading-[130%];
   }
   .why-features {
     @apply flex flex-wrap gap-5 justify-center xl:gap-[114px] xl:mt-[38px];
@@ -448,7 +448,7 @@
   }
 
   .why-item span {
-    @apply text-[#FFB931] font-medium tracking-[10%] opacity-70 leading-[120%] uppercase text-[12px] lg:text-[16px];
+    @apply text-[#FFB931] font-medium tracking-[10%] opacity-70 2xl:text-[18px] leading-[120%] uppercase text-[12px] lg:text-[16px];
     font-family: var(--font-general);
   }
   /*  DESTINATIONS SECTION */
@@ -466,13 +466,13 @@
   }
 
   .destinations-heading-wrap p {
-    @apply text-[#394B33] leading-[130%] tracking-[0%] font-normal lg:max-w-[674px] text-[12px] md:text-[14px] lg:text-[17px] opacity-80;
+    @apply text-[#394B33] leading-[130%] tracking-[0%] font-normal lg:max-w-[674px] text-[12px] md:text-[14px] lg:text-[17px] 2xl:text-[20px] opacity-80;
   }
 
   .destinations-cta-btn {
     @apply inline-flex items-center justify-center uppercase tracking-[5%] leading-[120%]
-          px-[20px] py-[15px] lg:px-[25px] cursor-pointer bg-[#394B33] h-[41px]
-           text-[12px] lg:text-[15px] font-semibold transition-all duration-[250ms]
+          px-[20px] py-[15px] lg:px-[25px] cursor-pointer bg-[#394B33] h-[41px] 2xl:h-[50px] 2xl:text-[20px]
+           text-[12px] lg:text-[15px] 2xl:h-[50px] font-semibold transition-all duration-[250ms]
            text-[#F2ECDC] ease-in-out outline-none;
     border: 1px solid #394b33;
     border-radius: 22px;
@@ -521,7 +521,7 @@
     font-family: var(--font-didot);
   }
   .dest-info-btn {
-    @apply absolute top-[21px] left-[21px] z-[10]
+    @apply absolute top-[21px] left-[21px] z-[10] text-[18px] 2xl:text-[20px]
            w-[28px] h-[28px] rounded-full
            flex items-center justify-center
            cursor-pointer outline-none leading-none
@@ -529,7 +529,6 @@
     border: 1.5px solid #ffffff;
     background: rgba(0, 0, 0, 0.4);
     font-family: var(--font-general);
-    font-size: 18px;
   }
 
   .dest-slide:has(.dest-highlights.is-open) .dest-info-btn {
@@ -673,7 +672,7 @@
 
   .journeys-card-wrap {
     @apply relative flex items-center
-           w-full lg:w-[50%] z-10 mt-10 lg:mt-0;
+           w-full lg:w-[50%] 2xl:w-full z-10 mt-10 lg:mt-0;
     min-height: 520px;
   }
 
@@ -685,7 +684,7 @@
   }
   .dreams-card-wrap {
     @apply relative flex items-center
-           w-full lg:w-[50%] z-10;
+           w-full lg:w-[50%] 2xl:w-full z-10;
     min-height: 520px;
   }
 
@@ -696,8 +695,8 @@
     }
   }
   .journeys-card {
-    @apply relative bg-white rounded-[5px] pt-[18px] px-[17px] pb-[62px];
-    width: 515px;
+    @apply relative bg-white rounded-[5px] w-[515px] 2xl:w-full pt-[18px] px-[17px] pb-[62px];
+
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.22);
     margin-right: -180px;
   }
@@ -740,7 +739,7 @@
   }
 
   .journeys-caption p {
-    @apply uppercase tracking-[10%] leading-[120%] text-[#394B33] italic text-[12px];
+    @apply uppercase tracking-[10%] leading-[120%] text-[#394B33] italic text-[12px] 2xl:text-[16px];
     font-family: var(--font-general);
   }
   .journeys-content {
@@ -801,16 +800,16 @@
     @apply uppercase font-normal -mt-[40px] md:mt-0 text-[#394B33] leading-[120%] tracking-[0%]  text-[20px] md:text-[32px] lg:text-[42px] xl:text-[50px];
   }
   .journeys-body-wrap p {
-    @apply text-white leading-[130%] tracking-[0%] opacity-80 text-[16px] font-normal;
+    @apply text-white leading-[130%] tracking-[0%] opacity-80 text-[16px] 2xl:text-[20px] font-normal;
   }
 
   .dreams-body-wrap p {
-    @apply text-[#394B33] leading-[130%] opacity-80 xl:w-[85%] text-[17px] font-normal;
+    @apply text-[#394B33] leading-[130%] opacity-80 xl:w-[85%] text-[17px] 2xl:text-[20px] font-normal;
   }
 
   .journeys-cta-btn {
-    @apply inline-flex items-center justify-center h-[41px] font-semibold self-start uppercase tracking-[5%] leading-[120%] mt-[10px]
-           !bg-[#F2ECDC] h-[41px] no-underline transition-all text-[15px] duration-300 py-[15px] text-[#394B33] px-[25px];
+    @apply inline-flex items-center justify-center h-[41px] 2xl:h-[50px] font-semibold self-start uppercase tracking-[5%] leading-[120%] mt-[10px]
+           !bg-[#F2ECDC] no-underline transition-all text-[15px]  2xl:text-[20px] duration-300 py-[15px] text-[#394B33] px-[25px];
 
     font-family: var(--font-general);
     border-radius: 22px;
@@ -821,8 +820,8 @@
   }
 
   .book-cta-btn {
-    @apply inline-flex items-center justify-center h-[41px] font-normal lg:font-semibold self-start uppercase tracking-[5%] leading-[120%] mt-[10px]
-           bg-transparent border border-[#394B33] no-underline transition-all text-[12px] lg:text-[15px] duration-300 py-[15px] text-[#394B33CC] px-[25px];
+    @apply inline-flex items-center justify-center h-[41px] 2xl:h-[50px] font-normal lg:font-semibold self-start uppercase tracking-[5%] leading-[120%] mt-[10px]
+           bg-transparent border border-[#394B33] no-underline transition-all text-[12px] lg:text-[15px]  2xl:text-[20px] duration-300 py-[15px] text-[#394B33CC] px-[25px];
 
     font-family: var(--font-general);
     border-radius: 22px;
@@ -832,8 +831,8 @@
     @apply bg-[#394B33] text-[#F2ECDC];
   }
   .View-cta-btn {
-    @apply inline-flex items-center h-[41px] justify-center font-normal lg:font-semibold self-start uppercase tracking-[5%] leading-[120%] mt-[10px]
-           bg-[#394B33] no-underline transition-all text-[12px] lg:text-[15px] duration-300 py-[15px] text-[#F2ECDC] px-[25px];
+    @apply inline-flex items-center h-[41px] 2xl:h-[50px] justify-center font-normal lg:font-semibold self-start uppercase tracking-[5%] leading-[120%] mt-[10px]
+           bg-[#394B33] no-underline transition-all text-[12px] lg:text-[15px]   2xl:text-[20px] duration-300 py-[15px] text-[#F2ECDC] px-[25px];
 
     font-family: var(--font-general);
     border-radius: 22px;
@@ -848,15 +847,15 @@
   /* ABOUT / HOW IT WORKS SECTION */
 
   .about-text-col {
-    @apply flex flex-col gap-5 mt-5 lg:mt-0 xl:mt-[70px];
+    @apply flex flex-col gap-5  xl:mt-[70px] w-[50%] xl:w-full 2xl:w-[50%];
   }
   .about-headline-wrap p {
     @apply text-[#F2ECDC] font-medium leading-[120%] tracking-[2%] 
-    text-[22px] xl:text-[30px];
+    text-[22px] xl:text-[30px] 2xl:text-[34px];
   }
 
   .about-body-wrap p {
-    @apply text-[#FFFFFF] text-[14px] xl:text-[17px] font-normal leading-[130%] tracking-[0%] opacity-80;
+    @apply text-[#FFFFFF] text-[14px] xl:text-[17px] 2xl:text-[20px] font-normal leading-[130%] tracking-[0%] opacity-80;
   }
 
   .about-link-wrap a {
@@ -868,8 +867,8 @@
     opacity: 0.7;
   }
   .about-cta-btn {
-    @apply inline-flex items-center h-[41px] font-semibold justify-center self-start uppercase tracking-[5%] leading-[120%]
-         !text-[#394B33] no-underline transition-all duration-300 !bg-[#F2ECDC] mt-[10px] px-[25px] py-[15px];
+    @apply inline-flex items-center h-[41px] 2xl:h-[50px] font-semibold justify-center self-start uppercase tracking-[5%] leading-[120%]
+         !text-[#394B33] no-underline transition-all duration-300 !bg-[#F2ECDC] mt-[10px] px-[25px] py-[15px] text-[15px] 2xl:text-[20px];
     font-family: var(--font-general);
     border-radius: 22px;
   }
@@ -882,7 +881,7 @@
   }
 
   .about-img-wrap {
-    @apply w-full h-[300px] xl:h-full overflow-hidden rounded-[5px] xl:w-[403px] xl:h-[493px];
+    @apply w-full h-[300px] xl:h-full 2xl:w-full 2xl:h-[500px] overflow-hidden rounded-[5px] xl:w-[403px] xl:h-[493px];
     aspect-ratio: 4 / 5;
   }
 
@@ -911,7 +910,7 @@
 
   .travel-heading-wrap p {
     @apply leading-[130%] text-[#FFFFFF] opacity-80 px-4 lg:px-0
-         text-[13px] md:text-[15px] lg:text-[17px] lg:max-w-[640px];
+         text-[13px] md:text-[15px] lg:text-[17px] 2xl:text-[20px] lg:max-w-[640px];
   }
   .travel-swiper-clip {
     @apply relative w-full;
@@ -973,14 +972,14 @@
 
   .travel-card-title h3 {
     @apply text-white font-normal text-center leading-[120%]
-         text-[22px] md:text-[28px] lg:text-[36px];
+         text-[22px] md:text-[28px] lg:text-[36px] 2xl:text-[38px];
     font-family: var(--font-didot);
     letter-spacing: 0.01em;
   }
 
   .travel-card-sub p {
     @apply text-white text-center uppercase leading-[130%] tracking-[0.14em]
-         text-[9px] md:text-[10px] lg:text-[11px];
+         text-[9px] md:text-[10px] lg:text-[11px] 2xl:text-[20px];
     font-family: var(--font-general);
     font-weight: 400;
     opacity: 0.85;
@@ -998,10 +997,10 @@
   }
 
   .travel-btn-prev {
-    left: 186px;
+    @apply left-10 xl:left-[186px];
   }
   .travel-btn-next {
-    right: 186px;
+    @apply right-10 xl:right-[186px];
   }
 
   .travel-btn-prev:hover,
@@ -1041,7 +1040,7 @@
 
   .stay-heading-wrap h2 {
     @apply uppercase font-normal leading-[130%] text-[#FFFFFF] tracking-[0%]
-         text-[24px] lg:text-[30px];
+         text-[24px] lg:text-[30px] 2xl:text-[34px];
   }
 
   .stay-body-wrap {
@@ -1050,7 +1049,7 @@
 
   .stay-body-wrap p {
     @apply leading-[130%] text-[#FFFFFF] opacity-80 tracking-[0%]
-         text-[13px] md:text-[14px] lg:text-[17px];
+         text-[13px] md:text-[14px] lg:text-[17px] 2xl:text-[20px];
   }
 
   .stay-divider {
@@ -1069,7 +1068,7 @@
   .stay-input {
     @apply w-full bg-transparent outline-none border-b-[#F2ECDC]
          text-[#F2ECDC] uppercase tracking-[10%] leading-[130%]
-         text-[12px] lg:text-[14px] font-medium;
+         text-[12px] lg:text-[14px] 2xl:text-[16px] font-medium;
     font-family: var(--font-general);
   }
 
@@ -1098,8 +1097,8 @@
     @apply inline-flex items-center justify-center uppercase
          tracking-[5%] leading-[120%] cursor-pointer outline-none
          text-[#394B33] bg-[#F2ECDC]
-         text-[12px] lg:text-[15px] font-semibold
-         transition-all duration-[250ms] ease-in-out px-[25px] py-[15px] h-[41px];
+         text-[12px] lg:text-[15px] 2xl:text-[20px] font-semibold
+         transition-all duration-[250ms] ease-in-out px-[25px] py-[15px] h-[41px] 2xl:h-[50px];
     border-radius: 22px;
     font-family: var(--font-general);
   }
@@ -1118,14 +1117,14 @@
     tracking-[0%] leading-[120%] font-normal;
   }
   .experiences-heading p {
-    @apply text-white opacity-[80%] text-[14px] lg:text-[17px] tracking-[0%] leading-[130%];
+    @apply text-white opacity-[80%] text-[14px] lg:text-[17px] 2xl:text-[20px] tracking-[0%] leading-[130%];
   }
 
   .experiences-btn {
     @apply inline-flex w-fit mt-2
          bg-[#F2ECDC] text-[#394B33]
-         px-[25px] py-[15px] h-[41px] font-semibold
-         rounded-[22px] uppercase text-[12px] leading-[120%]
+         px-[25px] py-[15px] h-[41px] 2xl:h-[50px] font-semibold
+         rounded-[22px] uppercase text-[15px] 2xl:text-[20px] leading-[120%]
          tracking-[5%] transition-all;
   }
 
@@ -1156,12 +1155,12 @@
     @apply flex flex-col gap-[10px];
   }
   .experience-content h3 {
-    @apply text-white text-[18px] lg:text-[24px] tracking-[2%] leading-[120%] font-medium xl:text-[30px];
+    @apply text-white text-[18px] lg:text-[24px] tracking-[2%] leading-[120%] font-medium xl:text-[30px] 2xl:text-[34px];
     font-family: var(--font-general);
   }
 
   .experience-content span {
-    @apply text-[#FFB931] uppercase text-[12px] lg:text-[16px] font-medium tracking-[10%] leading-[130%];
+    @apply text-[#FFB931] uppercase text-[12px] lg:text-[16px] 2xl:text-[20px] font-medium tracking-[10%] leading-[130%];
   }
   /* HOW IT WORKS*/
   .how-bg {
@@ -1201,21 +1200,21 @@
   .how-step h3 {
     font-family: var(--font-general);
     @apply uppercase text-[#FFB931] font-medium
-      text-[14px] lg:text-[16px] leading-[130%] tracking-[10%] mt-[36px];
+      text-[14px] lg:text-[16px] 2xl:text-[20px] leading-[130%] tracking-[10%] mt-[36px];
   }
   .how-step p {
-    @apply text-[#F2ECDC] opacity-80 font-normal text-[14px] lg:text-[17px] leading-[130%] tracking-[0%] mt-[10px];
+    @apply text-[#F2ECDC] opacity-80 font-normal text-[14px] lg:text-[17px] 2xl:text-[19px] leading-[130%] tracking-[0%] mt-[10px];
   }
   /* ── Accommodation Section ── */
   .accommodation-img-wrap {
-    @apply relative w-full;
-    aspect-ratio: 16 / 8;
-    min-height: 420px;
+    @apply relative w-full h-full;
   }
 
   @media (max-width: 767px) {
     .accommodation-img-wrap {
+      @apply h-full;
       aspect-ratio: 4 / 3;
+      min-height: 420px;
     }
   }
 
@@ -1224,19 +1223,13 @@
   }
 
   .accommodation-overlay {
-    @apply absolute inset-0;
-    background: linear-gradient(
-      to top right,
-      rgba(0, 0, 0, 0.78) 0%,
-      rgba(0, 0, 0, 0.42) 35%,
-      rgba(0, 0, 0, 0.08) 65%,
-      rgba(0, 0, 0, 0) 100%
-    );
+    @apply absolute inset-0 opacity-60;
+    background: linear-gradient(to top right, #000000 0%, #00000000 100%);
   }
 
   .accommodation-content {
     @apply absolute bottom-0 left-0 gap-2 lg:gap-5 flex-col flex 
-    p-5 xl:p-0 xl:pb-[64px] xl:pl-[91px];
+    p-6 xl:p-0 xl:pb-[64px] xl:pl-[91px];
   }
 
   .accommodation-heading {
@@ -1244,7 +1237,7 @@
   }
 
   .accommodation-body {
-    @apply font-normal  text-[12px] md:text-[14px] lg:text-[17px] text-[#FFFFFF] tracking-[0%] leading-[130%];
+    @apply font-normal  text-[12px] md:text-[14px] lg:text-[17px] 2xl:text-[20px] text-[#FFFFFF] tracking-[0%] leading-[130%];
     max-width: 552px;
   }
 
@@ -1269,7 +1262,7 @@
   }
 
   .travellers-heading-wrap h2 {
-    @apply uppercase font-normal text-[#394B33] tracking-[0%] leading-[120%] text-[26px] lg:text-[30px];
+    @apply uppercase font-normal text-[#394B33] tracking-[0%] leading-[120%] text-[26px] lg:text-[30px] 2xl:text-[34px];
   }
 
   .travellers-grid {
@@ -1310,11 +1303,11 @@
     @apply h-[18px] w-auto;
   }
   .traveller-quote p {
-    @apply font-normal text-[16px] tracking-[0%] leading-[130%] opacity-80 text-[#141C12];
+    @apply font-normal text-[16px] 2xl:text-[20px] tracking-[0%] leading-[130%] opacity-80 text-[#141C12];
     font-family: var(--font-nimbus);
   }
   .traveller-author p {
-    @apply text-[#394B33] italic text-[16px];
+    @apply text-[#394B33] italic text-[16px] 2xl:text-[20px] leading-[140%] tracking-[0%];
     font-family: var(--font-didot);
   }
   .travellers-nav {
@@ -1344,7 +1337,7 @@
   }
 
   .footer-contact p {
-    @apply text-[12px] sm:text-[13px] text-[#F2ECDC] md:text-[14px] lg:text-[15px] xl:text-[16px]
+    @apply text-[12px] sm:text-[13px] text-[#F2ECDC] md:text-[14px] lg:text-[15px] xl:text-[16px]  2xl:text-[20px]
          leading-[130%] tracking-[0%];
     font-family: var(--font-general);
   }
@@ -1364,12 +1357,12 @@
   }
   .footer-menu1 li a {
     @apply leading-[130%] tracking-[10%] no-underline uppercase transition-opacity duration-200
-         text-[12px] sm:text-[13px] md:text-[14px] font-medium text-[#F2ECDC] lg:text-[15px] xl:text-[16px];
+         text-[12px] sm:text-[13px] md:text-[14px] font-medium text-[#F2ECDC] lg:text-[15px] xl:text-[16px]  2xl:text-[20px];
     font-family: var(--font-general);
   }
   .footer-menu2 li a {
     @apply leading-[130%] tracking-[10%] no-underline font-light uppercase transition-opacity duration-200
-         text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] text-[#F2ECDC];
+         text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px]  2xl:text-[20px] text-[#F2ECDC];
     font-family: var(--font-general);
   }
 
@@ -1388,9 +1381,9 @@
     @apply inline-flex items-center justify-center uppercase tracking-[5%] leading-[120%]
          text-[#394B33] bg-[#F2ECDC] w-full xl:w-fit
          px-[18px] sm:px-[20px] md:px-[22px] lg:px-[24px] xl:px-[25px] xl:py-[15px]
-         py-[8px] sm:py-[9px] md:py-[10px] h-[41px] font-semibold
+         py-[8px] sm:py-[9px] md:py-[10px] h-[41px] 2xl:h-[50px] font-semibold
          
-         text-[11px] sm:text-[12px] md:text-[13px] xl:text-[15px]
+         text-[11px] sm:text-[12px] md:text-[13px] xl:text-[15px]  2xl:text-[20px]
          rounded-[22px] transition-all duration-300;
     font-family: var(--font-general);
   }
@@ -1402,8 +1395,8 @@
   .footer-btn-secondary {
     @apply inline-flex items-center justify-center uppercase tracking-[5%] leading-[120%]
          border border-[#FFB931CC] text-[#FFB931CC]
-         px-[18px] sm:px-[20px] md:px-[22px] lg:px-[24px] xl:px-[25px] xl:py-[15px] h-[41px]
-         py-[8px] sm:py-[9px] md:py-[10px] xl:text-[15px] font-semibold
+         px-[18px] sm:px-[20px] md:px-[22px] lg:px-[24px] xl:px-[25px] xl:py-[15px] h-[41px] 2xl:h-[50px]
+         py-[8px] sm:py-[9px] md:py-[10px] xl:text-[15px]  2xl:text-[20px] font-semibold
          text-[11px] sm:text-[12px] md:text-[13px] w-full xl:w-fit
          rounded-[22px] transition-all duration-300;
     font-family: var(--font-general);
@@ -1415,6 +1408,13 @@
 
   .footer-socials {
     @apply flex items-center gap-3 sm:gap-4 md:gap-5 pt-[15px] xl:ml-10;
+  }
+
+  .mobile-social-footer {
+    @apply flex lg:hidden;
+  }
+  .desktop-social-footer {
+    @apply lg:flex hidden;
   }
 
   .footer-socials a {
@@ -1454,13 +1454,13 @@
          gap-3 sm:gap-4 md:gap-5;
   }
   .Accreditations {
-    @apply text-[11px] text-white sm:text-[12px] md:text-[13px] font-normal leading-[130%] tracking-[0%]
+    @apply text-[11px] text-white sm:text-[12px] md:text-[13px] 2xl:text-[15px] font-normal leading-[130%] tracking-[0%]
          opacity-80;
   }
   .footer-bottom-right a {
     @apply transition-opacity duration-200
      text-white
-         text-[11px] sm:text-[12px] md:text-[13px] font-normal leading-[130%] tracking-[0%]
+         text-[11px] sm:text-[12px] md:text-[13px] 2xl:text-[15px] font-normal leading-[130%] tracking-[0%]
          opacity-80;
   }
 

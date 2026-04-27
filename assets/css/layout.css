@@ -21,7 +21,7 @@
   }
 
   .destinations-inner {
-    @apply relative w-full max-w-[1440px] mx-auto flex flex-col gap-[48px] xl:gap-[62px];
+    @apply relative w-full max-w-[1920px] mx-auto flex flex-col gap-[48px] xl:gap-[62px];
   }
 
   .destinations-swiper-clip {
@@ -35,25 +35,34 @@
   /*  UNFORGETTABLE JOURNEYS SECTION*/
 
   .journeys-section {
-    @apply relative w-full lg:pt-[93px] lg:pb-[111px] px-10  xl:pl-[111px] xl:pr-[122px];
+    @apply relative w-full lg:pt-[93px] lg:pb-[111px] px-6  xl:pl-[111px] 2xl:pl-10 2xl:pr-10 xl:pr-[122px];
   }
   .vj-section {
     @apply relative w-full lg:pt-[93px] lg:pb-[111px] pl-10 pr-10  xl:pl-[111px] xl:pr-[122px];
   }
   .journeys-inner {
-    @apply relative flex flex-col md:flex-row px-5 gap-2 lg:gap-0 lg:px-0 items-stretch;
+    @apply relative flex flex-col md:flex-row gap-2 lg:gap-0 lg:px-0 items-stretch;
     min-height: 420px;
-    max-width: 1200px;
+    max-width: 1920px;
   }
   /* ABOUT / HOW IT WORKS SECTION */
 
   .about-section {
-    @apply w-full pb-[111px];
+    @apply w-full lg:pb-[111px] py-12;
   }
 
   .about-inner {
-    @apply flex flex-col lg:flex-row items-start gap-12 lg:gap-20 xl:gap-[99px]
-          px-6 lg:px-10 xl:pl-[190px] xl:pr-[187px];
+    @apply flex flex-col lg:flex-row items-start 
+         gap-12 lg:gap-20 xl:gap-[99px] 
+         px-6 lg:px-10 xl:pl-[190px] xl:pr-[187px];
+  }
+
+  .about-text-col {
+    @apply order-2 lg:order-1;
+  }
+
+  .about-img-col {
+    @apply order-1 lg:order-2;
   }
   /* HOW IT WORKS*/
 
@@ -101,8 +110,7 @@
 
   .stay-inner {
     @apply flex flex-col gap-[32px] lg:gap-[40px]
-xl:gap-[56px]  px-[30px] py-[50px]  xl:px-[80px] xl:pt-[50px] xl:pb-[114px];
-    max-width: 1440px;
+xl:gap-[56px]  px-[30px] py-[50px]  xl:px-[80px] xl:pt-[50px] xl:pb-[114px] max-w-[1920px];
     margin-inline: auto;
   }
   /* FOOTER*/
