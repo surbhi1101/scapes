@@ -2372,24 +2372,6 @@
     aspect-ratio: 3 / 2;
     border-radius: 6px;
   }
-  .travel-pagination .swiper-pagination-bullet {
-    display: block;
-    height: 5px !important;
-    width: 5px !important;
-    cursor: pointer;
-    border-radius: calc(infinity * 1px);
-    background-color: #F2ECDC !important;
-    opacity: 100% !important;
-    transition-property: all;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-    --tw-duration: 300ms;
-    transition-duration: 300ms;
-    margin: 0 !important;
-  }
-  .travel-pagination .swiper-pagination-bullet-active {
-    background-color: #FFB931 !important;
-  }
   @media (min-width: 1152px) {
     .travel-card {
       aspect-ratio: 16 / 9;
@@ -2519,6 +2501,24 @@
     align-items: center;
     justify-content: center;
     gap: 15px;
+  }
+  .travel-pagination .swiper-pagination-bullet {
+    display: block;
+    height: 5px !important;
+    width: 5px !important;
+    cursor: pointer;
+    border-radius: calc(infinity * 1px);
+    background-color: #F2ECDC !important;
+    opacity: 100% !important;
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+    margin: 0 !important;
+  }
+  .travel-pagination .swiper-pagination-bullet-active {
+    background-color: #FFB931 !important;
   }
   .vj-section {
     position: relative;
@@ -2992,6 +2992,9 @@
     padding: calc(var(--spacing) * 5);
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 5);
+    }
+    @media (width >= 80rem) {
+      padding: calc(var(--spacing) * 0);
     }
     @media (width >= 80rem) {
       padding-bottom: 64px;
