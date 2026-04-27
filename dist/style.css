@@ -283,7 +283,7 @@
       padding-top: 103px;
     }
     @media (width >= 1440px) {
-      padding-bottom: 73px;
+      padding-bottom: 72px;
     }
     overflow: hidden;
   }
@@ -322,7 +322,7 @@
       padding-right: 122px;
     }
     @media (width >= 1440px) {
-      padding-left: 111px;
+      padding-left: 113px;
     }
     @media (width >= 1920px) {
       padding-right: calc(var(--spacing) * 10);
@@ -370,6 +370,9 @@
   .about-section {
     width: 100%;
     padding-block: calc(var(--spacing) * 12);
+    @media (width >= 1152px) {
+      padding-block: calc(var(--spacing) * 0);
+    }
     @media (width >= 1152px) {
       padding-bottom: 111px;
     }
@@ -452,7 +455,7 @@
     z-index: 10;
     margin-inline: auto;
     display: flex;
-    max-width: 1920;
+    max-width: 1920px;
     flex-direction: column;
     align-items: center;
     gap: calc(var(--spacing) * 10);
@@ -485,6 +488,9 @@
       padding-inline: 80px;
     }
     @media (width >= 1440px) {
+      padding-block: calc(var(--spacing) * 0);
+    }
+    @media (width >= 1440px) {
       padding-top: 161px;
     }
     @media (width >= 1440px) {
@@ -496,7 +502,7 @@
     display: flex;
     max-width: 1920px;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
   }
   .accommodation-section {
     position: relative;
@@ -529,13 +535,13 @@
       gap: 40px;
     }
     @media (width >= 1440px) {
-      gap: 56px;
+      gap: 76px;
     }
     @media (width >= 1440px) {
       padding-inline: 80px;
     }
     @media (width >= 1440px) {
-      padding-top: 50px;
+      padding-top: 56px;
     }
     @media (width >= 1440px) {
       padding-bottom: 114px;
@@ -550,31 +556,15 @@
   .footer-inner {
     margin-inline: auto;
     max-width: 1920px;
-    padding-inline: calc(var(--spacing) * 4);
     padding-top: 50px;
-    @media (width >= 320px) {
-      padding-inline: calc(var(--spacing) * 6);
-    }
     @media (width >= 320px) {
       padding-top: 60px;
     }
     @media (width >= 768px) {
-      padding-inline: calc(var(--spacing) * 8);
-    }
-    @media (width >= 768px) {
       padding-top: 70px;
-    }
-    @media (width >= 1152px) {
-      padding-inline: calc(var(--spacing) * 12);
     }
     @media (width >= 1440px) {
       padding-top: 101px;
-    }
-    @media (width >= 1440px) {
-      padding-right: 80px;
-    }
-    @media (width >= 1440px) {
-      padding-left: 114px;
     }
   }
 }
@@ -845,7 +835,7 @@
   }
   .nav-images-row {
     display: flex;
-    gap: 32px;
+    gap: calc(var(--spacing) * 8);
   }
   .nav-img-wrap {
     flex: 1;
@@ -1250,8 +1240,8 @@
     font-size: 10px;
     --tw-leading: 120%;
     line-height: 120%;
-    --tw-font-weight: var(--font-weight-light);
-    font-weight: var(--font-weight-light);
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
     --tw-tracking: 10%;
     letter-spacing: 10%;
     color: #F2ECDC;
@@ -1378,6 +1368,9 @@
     gap: 28px;
     padding-inline: 24px;
     text-align: center;
+    @media (width >= 1152px) {
+      padding-inline: calc(var(--spacing) * 0);
+    }
   }
   .destination-heading {
     display: flex;
@@ -1839,7 +1832,7 @@
       margin-top: calc(var(--spacing) * 0);
     }
     @media (width >= 1152px) {
-      width: 50%;
+      width: 20%;
     }
     @media (width >= 1920px) {
       width: 100%;
@@ -1858,12 +1851,23 @@
     width: 100%;
     align-items: center;
     @media (width >= 1152px) {
-      width: 50%;
+      margin-top: 50px;
+    }
+    @media (width >= 1152px) {
+      margin-bottom: 51px;
+    }
+    @media (width >= 1152px) {
+      height: 491px;
+    }
+    @media (width >= 1152px) {
+      width: 20%;
+    }
+    @media (width >= 1920px) {
+      height: 100%;
     }
     @media (width >= 1920px) {
       width: 100%;
     }
-    min-height: 520px;
   }
   @media (max-width: 1151px) {
     .dreams-card-wrap {
@@ -1873,12 +1877,16 @@
   }
   .journeys-card {
     position: relative;
+    height: 491px;
     width: 515px;
     border-radius: 5px;
     background-color: var(--color-white);
     padding-inline: 17px;
     padding-top: 18px;
     padding-bottom: 62px;
+    @media (width >= 1920px) {
+      height: 100%;
+    }
     @media (width >= 1920px) {
       width: 100%;
     }
@@ -1916,7 +1924,7 @@
       top: 37px;
     }
     @media (width >= 1152px) {
-      right: 44px;
+      right: 18px;
     }
     @media (width >= 1152px) {
       height: 75px;
@@ -1999,17 +2007,22 @@
     @media (width >= 1152px) {
       margin-top: calc(var(--spacing) * 0);
     }
+    @media (width >= 1152px) {
+      padding-left: 393px;
+    }
     @media (width >= 1920px) {
       min-height: 850px;
     }
-    padding-left: 110px;
+    @media (width >= 1920px) {
+      padding-left: calc(var(--spacing) * 10);
+    }
     padding-right: 115px;
     background-color: #2b3927;
   }
   .dreams-content {
     position: relative;
     display: flex;
-    min-height: 520px;
+    min-height: 593px;
     width: 100%;
     flex-direction: column;
     justify-content: center;
@@ -2018,6 +2031,9 @@
     border-radius: 5px;
     background-color: #F2ECDC;
     padding-left: 70px;
+    @media (width >= 1152px) {
+      padding-left: 353px;
+    }
     @media (width >= 1440px) {
       gap: calc(var(--spacing) * 6);
     }
@@ -2029,6 +2045,9 @@
     }
     @media (width >= 1920px) {
       padding-inline: calc(var(--spacing) * 20);
+    }
+    @media (width >= 1920px) {
+      padding-left: calc(var(--spacing) * 10);
     }
   }
   @media (max-width: 1151px) {
@@ -2083,18 +2102,6 @@
     gap: calc(var(--spacing) * 3);
     @media (width >= 1152px) {
       gap: calc(var(--spacing) * 5);
-    }
-    @media (width >= 1152px) {
-      padding-right: 50px;
-    }
-    @media (width >= 1152px) {
-      padding-left: 110px;
-    }
-    @media (width >= 1920px) {
-      padding-right: calc(var(--spacing) * 0);
-    }
-    @media (width >= 1920px) {
-      padding-left: calc(var(--spacing) * 0);
     }
   }
   .journeys-heading-wrap h2 {
@@ -2160,7 +2167,7 @@
     color: #394B33;
     opacity: 80%;
     @media (width >= 1440px) {
-      width: 85%;
+      width: 75%;
     }
     @media (width >= 1920px) {
       font-size: 20px;
@@ -2205,7 +2212,7 @@
     color: #F2ECDC;
   }
   .book-cta-btn {
-    margin-top: 10px;
+    margin-top: calc(var(--spacing) * 2);
     display: inline-flex;
     height: 41px;
     align-items: center;
@@ -2253,7 +2260,7 @@
     color: #F2ECDC;
   }
   .View-cta-btn {
-    margin-top: 10px;
+    margin-top: calc(var(--spacing) * 2);
     display: inline-flex;
     height: 41px;
     align-items: center;
@@ -2502,6 +2509,8 @@
     font-size: 13px;
     --tw-leading: 130%;
     line-height: 130%;
+    --tw-tracking: 0%;
+    letter-spacing: 0%;
     color: #FFFFFF;
     opacity: 80%;
     @media (width >= 768px) {
@@ -2595,7 +2604,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: calc(var(--spacing) * 1);
+    gap: 5px;
     padding-top: calc(var(--spacing) * 4);
     @media (width >= 1440px) {
       padding-top: 43px;
@@ -2795,6 +2804,8 @@
     font-size: 13px;
     --tw-leading: 130%;
     line-height: 130%;
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
     --tw-tracking: 0%;
     letter-spacing: 0%;
     color: #FFFFFF;
@@ -2823,7 +2834,7 @@
       flex-direction: row;
     }
     @media (width >= 1152px) {
-      gap: 56px;
+      gap: 54px;
     }
   }
   .stay-field {
@@ -2953,6 +2964,8 @@
     font-size: 14px;
     --tw-leading: 130%;
     line-height: 130%;
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
     --tw-tracking: 0%;
     letter-spacing: 0%;
     color: var(--color-white);
@@ -3439,27 +3452,57 @@
   .footer-top {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding-inline: calc(var(--spacing) * 4);
+    @media (width >= 320px) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
+    @media (width >= 768px) {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    @media (width >= 768px) {
+      padding-inline: calc(var(--spacing) * 8);
+    }
+    @media (width >= 1152px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    @media (width >= 1152px) {
+      padding-inline: calc(var(--spacing) * 12);
+    }
+    @media (width >= 1440px) {
+      padding-right: 80px;
+    }
+    @media (width >= 1440px) {
+      padding-left: 114px;
+    }
+  }
+  .footer-link {
+    margin-top: calc(var(--spacing) * 5);
+    display: flex;
+    flex-direction: column;
     gap: 30px;
     @media (width >= 320px) {
       gap: 35px;
     }
     @media (width >= 768px) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    @media (width >= 768px) {
       gap: 40px;
     }
     @media (width >= 1152px) {
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      margin-top: calc(var(--spacing) * 0);
+    }
+    @media (width >= 1152px) {
+      flex-direction: row;
     }
     @media (width >= 1152px) {
       gap: 50px;
     }
     @media (width >= 1440px) {
-      gap: 60px;
+      width: 531px;
+    }
+    @media (width >= 1440px) {
+      gap: 93px;
     }
     @media (width >= 1920px) {
-      gap: 80px;
+      gap: 100px;
     }
   }
   .footer-brand {
@@ -3638,15 +3681,21 @@
     opacity: 20%;
   }
   .footer-cta {
+    margin-top: calc(var(--spacing) * 5);
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     gap: calc(var(--spacing) * 3);
     @media (width >= 320px) {
       gap: calc(var(--spacing) * 4);
     }
     @media (width >= 768px) {
       gap: calc(var(--spacing) * 5);
+    }
+    @media (width >= 1152px) {
+      margin-top: calc(var(--spacing) * 0);
+    }
+    @media (width >= 1152px) {
+      align-items: flex-end;
     }
     @media (width >= 1152px) {
       gap: 29px;
@@ -3683,6 +3732,9 @@
       padding-block: 9px;
     }
     @media (width >= 768px) {
+      width: fit-content;
+    }
+    @media (width >= 768px) {
       padding-inline: 22px;
     }
     @media (width >= 768px) {
@@ -3693,9 +3745,6 @@
     }
     @media (width >= 1152px) {
       padding-inline: 24px;
-    }
-    @media (width >= 1440px) {
-      width: fit-content;
     }
     @media (width >= 1440px) {
       padding-inline: 25px;
@@ -3754,6 +3803,9 @@
       font-size: 12px;
     }
     @media (width >= 768px) {
+      width: fit-content;
+    }
+    @media (width >= 768px) {
       padding-inline: 22px;
     }
     @media (width >= 768px) {
@@ -3764,9 +3816,6 @@
     }
     @media (width >= 1152px) {
       padding-inline: 24px;
-    }
-    @media (width >= 1440px) {
-      width: fit-content;
     }
     @media (width >= 1440px) {
       padding-inline: 25px;
@@ -3854,15 +3903,31 @@
     align-items: center;
     justify-content: space-between;
     gap: calc(var(--spacing) * 3);
+    padding-inline: calc(var(--spacing) * 4);
     padding-block: 17px;
     @media (width >= 320px) {
       gap: calc(var(--spacing) * 4);
     }
+    @media (width >= 320px) {
+      padding-inline: calc(var(--spacing) * 6);
+    }
     @media (width >= 768px) {
       gap: calc(var(--spacing) * 5);
     }
+    @media (width >= 768px) {
+      padding-inline: calc(var(--spacing) * 8);
+    }
     @media (width >= 1152px) {
       flex-direction: row;
+    }
+    @media (width >= 1152px) {
+      padding-inline: calc(var(--spacing) * 12);
+    }
+    @media (width >= 1440px) {
+      padding-right: 80px;
+    }
+    @media (width >= 1440px) {
+      padding-left: 114px;
     }
   }
   .divider-bottom {
@@ -3897,12 +3962,15 @@
   }
   .footer-bottom-right, .Accreditations {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: calc(var(--spacing) * 3);
     @media (width >= 320px) {
       gap: calc(var(--spacing) * 4);
+    }
+    @media (width >= 768px) {
+      flex-direction: row;
     }
     @media (width >= 768px) {
       gap: calc(var(--spacing) * 5);
